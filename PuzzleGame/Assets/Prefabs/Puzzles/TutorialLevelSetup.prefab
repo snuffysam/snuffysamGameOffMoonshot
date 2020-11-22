@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8658535097454575143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8658535097454575145}
+  - component: {fileID: 8658535097454575144}
+  m_Layer: 0
+  m_Name: TutorialLevelSetup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8658535097454575145
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8658535097454575143}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.42068467, y: 0.9099936, z: -798.1415}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8658535097454575144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8658535097454575143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1d37764f74134a848227823cc6979a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzlePrefab: {fileID: 5256284882618988785, guid: dd0bc84b6e7ad40a3bbd47a4a00d40f8,
+    type: 3}
+  cannonPrefab: {fileID: 7199765238781142813, guid: 173e7101a33c845f0b454b1811a953d2,
+    type: 3}
+  blockedGems: 010000000200000000000000000000000100000002000000000000000200000001000000
+  startTime: 120
+  nextLevel: SampleScene
+  quitLevel: MenuScene
+  nextLevelPrefab: {fileID: 0}
+  RNG_order: 0
+  missionName: Good Riddance, Moon!
+  missionTip: All right, let's blow up this moon lickety-split! Use the arrow keys
+    to fly around and the spacebar to drop some blocks! If you get stuck, use escape
+    to pause the level or R to retry!
+  loadSong: {fileID: 8300000, guid: 8e92be09ad386479f9b36f6c9ff1b9da, type: 3}
+  quitSong: {fileID: 8300000, guid: dc270cc34bab84ae9a5948367b84e9aa, type: 3}
+  isBossBattle: 0
+  index: 0

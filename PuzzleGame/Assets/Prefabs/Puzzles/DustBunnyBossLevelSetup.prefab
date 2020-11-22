@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3981990688042505009
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3981990688042505023}
+  - component: {fileID: 3981990688042505022}
+  m_Layer: 0
+  m_Name: DustBunnyBossLevelSetup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3981990688042505023
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3981990688042505009}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.42068467, y: 0.9099936, z: -798.1415}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3981990688042505022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3981990688042505009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1d37764f74134a848227823cc6979a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzlePrefab: {fileID: 7300729378589759857, guid: ba378eb28742a494aa7238da88106206,
+    type: 3}
+  cannonPrefab: {fileID: 4505221559386614353, guid: 88ad85e959c7b42ffa04ebfcb1192027,
+    type: 3}
+  blockedGems: 0500000003000000020000000400000003000000050000000200000004000000
+  startTime: 180
+  nextLevel: MenuScene
+  quitLevel: MenuScene
+  nextLevelPrefab: {fileID: 0}
+  RNG_order: 0
+  missionName: Aa-aachoo!
+  missionTip: What is this strange being, lower-case "O" underscore zero? It seems
+    to be spewing moon dust in all directions. I must destroy these moons quickly
+    before my mission becomes impossible, colon zero.
+  loadSong: {fileID: 8300000, guid: e57b6677ebd8d4dd38eb42385aaa130e, type: 3}
+  quitSong: {fileID: 8300000, guid: dc270cc34bab84ae9a5948367b84e9aa, type: 3}
+  isBossBattle: 1
+  index: 4

@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &40945082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7199765238781142813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e5db02b5249943798949efb6fca3162, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayName: 
+  iconReady: {fileID: 21300000, guid: 8fe17ed83f0cc4043885329b04676033, type: 3}
+  iconUsed: {fileID: 21300000, guid: a5977b55a36bd49998faa6fc85d234b4, type: 3}
+  chainPrefab: {fileID: 2710389269565327176, guid: adbdfbb2f707d4b19b8c0685a15b0818,
+    type: 3}
+  targetPrefab: {fileID: 8724768445069376976, guid: 0258f614a3c074685bfc0faf8ceac439,
+    type: 3}
+--- !u!1001 &3940411386096817833
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6144478972051059124, guid: 1c1927334cc974448a5fa59336392ab5,
+        type: 3}
+      propertyPath: m_Name
+      value: CannonLasso Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 6144478972051059126, guid: 1c1927334cc974448a5fa59336392ab5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 6144478972051059126, guid: 1c1927334cc974448a5fa59336392ab5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6144478972051059126, guid: 1c1927334cc974448a5fa59336392ab5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6144478972051059126, guid: 1c1927334cc974448a5fa59336392ab5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6144478972051059126, guid: 1c1927334cc974448a5fa59336392ab5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6144478972051059126, guid: 1c1927334cc974448a5fa59336392ab5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6144478972051059126, guid: 1c1927334cc974448a5fa59336392ab5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6144478972051059126, guid: 1c1927334cc974448a5fa59336392ab5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6144478972051059126, guid: 1c1927334cc974448a5fa59336392ab5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6144478972051059126, guid: 1c1927334cc974448a5fa59336392ab5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6144478972051059126, guid: 1c1927334cc974448a5fa59336392ab5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1c1927334cc974448a5fa59336392ab5, type: 3}
+--- !u!1 &7199765238781142813 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6144478972051059124, guid: 1c1927334cc974448a5fa59336392ab5,
+    type: 3}
+  m_PrefabInstance: {fileID: 3940411386096817833}
+  m_PrefabAsset: {fileID: 0}
