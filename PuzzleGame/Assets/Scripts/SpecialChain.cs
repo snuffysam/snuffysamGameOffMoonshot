@@ -6,10 +6,14 @@ public class SpecialChain : SpecialMove
 {
     public GameObject chainPrefab;
     public GameObject targetPrefab;
+    public GameObject soundPrefab;
+    public AudioClip twirlSFX, hitSFX;
     private GameObject spawnedChain;
     private GemScript selectedGem;
     private GameObject targetObject;
     private float minDist;
+    private ScoreTimerScript sts;
+    private GameObject twirlingObj;
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -22,7 +26,11 @@ public class SpecialChain : SpecialMove
     {
         base.Update();
 
+        if (sts == null){
+            sts = FindObjectOfType<ScoreTimerScript>();
+        }
         if (targetObject != null){
+            sts.SetPortrait(1);
             GemScript[] availableGems = FindObjectsOfType<GemScript>();
             minDist = 999999f;
             Vector3 targetPosition = transform.position;
@@ -51,6 +59,7 @@ public class SpecialChain : SpecialMove
         }
 
         if (selectedGem != null){
+            sts.SetPortrait(1);
             Vector3 towardsGem = selectedGem.transform.position - transform.position;
             if (towardsGem.magnitude > minDist){
                 selectedGem.transform.position = transform.position + towardsGem.normalized*minDist;
@@ -68,6 +77,10 @@ public class SpecialChain : SpecialMove
                 Destroy(spawnedChain.gameObject);
             }
         }
+    }
+
+    public bool IsUsing(){
+        return targetObject != null || spawnedChain != null;
     }
 
     public void EndChain(){
@@ -92,9 +105,18 @@ public class SpecialChain : SpecialMove
         }
 
         spawnedChain = Instantiate<GameObject>(chainPrefab);
+
+        Destroy(twirlingObj);
+        GameObject snd = Instantiate<GameObject>(soundPrefab);
+        snd.GetComponent<SFXScript>().sfx = hitSFX;
     }
 
     protected override void UseSpecial(){
+        base.UseSpecial();
         targetObject = Instantiate<GameObject>(targetPrefab);
+
+        twirlingObj = Instantiate<GameObject>(soundPrefab);
+        twirlingObj.GetComponent<SFXScript>().sfx = twirlSFX;
+        twirlingObj.GetComponent<SFXScript>().isLoop = true;
     }
 }

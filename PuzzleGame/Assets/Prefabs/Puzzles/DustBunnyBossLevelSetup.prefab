@@ -57,7 +57,7 @@ MonoBehaviour:
   missionTip: What is this strange being, lower-case "O" underscore zero? It seems
     to be spewing moon dust in all directions. I must destroy these moons quickly
     before my mission becomes impossible, colon zero.
-  loadSong: {fileID: 8300000, guid: e57b6677ebd8d4dd38eb42385aaa130e, type: 3}
-  quitSong: {fileID: 8300000, guid: dc270cc34bab84ae9a5948367b84e9aa, type: 3}
+  loadSong: {fileID: 8300000, guid: 4ec591f28433f4aff856648f0a59572f, type: 3}
+  quitSong: {fileID: 8300000, guid: 421e35068ebdf414e98631aae69e0653, type: 3}
   isBossBattle: 1
   index: 4

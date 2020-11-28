@@ -56,7 +56,6 @@ MonoBehaviour:
   missionName: Master of Ceremonies
   missionTip: JACK!!! My old friend, what's gotten into you?! I don't know who re-built
     you, but I promise... I'LL SAVE YOU IF IT'S THE LAST THING I DO!!!
-  loadSong: {fileID: 8300000, guid: e57b6677ebd8d4dd38eb42385aaa130e, type: 3}
-  quitSong: {fileID: 8300000, guid: dc270cc34bab84ae9a5948367b84e9aa, type: 3}
+  loadSong: {fileID: 8300000, guid: 5db7fd6fef0b741d68f5d84770d7e8b1, type: 3}
   isBossBattle: 1
   index: 4

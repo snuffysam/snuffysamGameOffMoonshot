@@ -8,6 +8,7 @@ public class DataTracker : MonoBehaviour
     public bool testMode;
     private static int[] levelScores;
     public GameObject selectedShip;
+    public static bool originalControls = true;
     // Start is called before the first frame update
     void Awake()
     {
@@ -56,5 +57,20 @@ public class DataTracker : MonoBehaviour
             return false;
         }
         return true;
+    }
+
+    public void ToggleTestMode(){
+        testMode = !testMode;
+        if (testMode){
+            for (int i = 0; i < levelScores.Length; i++){
+                levelScores[i] = 1;
+            }
+        } else {
+            for (int i = 0; i < levelScores.Length; i++){
+                if (levelScores[i] == 1){
+                    levelScores[i] = 0;
+                }
+            }
+        }
     }
 }

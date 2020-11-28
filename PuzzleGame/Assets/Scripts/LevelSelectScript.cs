@@ -13,10 +13,16 @@ public class LevelSelectScript : MonoBehaviour
     public Image[] icons;
     public Button[] buttons;
     public Button[] characterSelects;
+    public GameObject leftArrow,rightArrow;
+    public GameObject optionsMenu;
     private int levelIndex;
     public static int currentMenu = 1;
     public GameObject soundPrefab;
     public AudioClip clickSFX;
+    public Sprite lockedIcon;
+    public Image controlsButton;
+    public Sprite[] controlsSprites;
+    public AudioClip menuSong;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +41,8 @@ public class LevelSelectScript : MonoBehaviour
         if (levelIndex < 1){
             levelIndex = 1;
         }
+            FindObjectOfType<Jukebox>().PlaySong(menuSong);
+            FindObjectOfType<Jukebox>().SetLoop(true);
     }
 
     // Update is called once per frame
@@ -58,6 +66,7 @@ public class LevelSelectScript : MonoBehaviour
                     }
                 } else {
                     icons[i].gameObject.SetActive(true);
+                    icons[i].sprite = lss.cannonPrefab.GetComponent<CannonScript>().portraits[0];
                     for (int k = 0; k < 4; k++){
                         characterSelects[i*4+k].gameObject.SetActive(false);
                     }
@@ -65,11 +74,31 @@ public class LevelSelectScript : MonoBehaviour
             } else {
                 contractNames[i].text = "Locked!";
                 profits[i].gameObject.SetActive(false);
-                icons[i].gameObject.SetActive(false);
+                icons[i].gameObject.SetActive(true);
+                icons[i].sprite = lockedIcon;
                 buttons[i].gameObject.SetActive(false);
+                for (int k = 0; k < 4; k++){
+                    characterSelects[i*4+k].gameObject.SetActive(false);
+                }
             }
         }
+        if (levelIndex == 1){
+            leftArrow.SetActive(false);
+        } else {
+            leftArrow.SetActive(true);
+        }
+        if (levelSetups.Length - 2 == 1){
+            rightArrow.SetActive(false);
+        } else {
+            rightArrow.SetActive(true);
+        }
         LevelSelectScript.currentMenu = levelIndex;
+
+        if (DataTracker.originalControls){
+            controlsButton.sprite = controlsSprites[0];
+        } else {
+            controlsButton.sprite = controlsSprites[1];
+        }
     }
 
     public void SelectLevel(int offset){
@@ -104,6 +133,24 @@ public class LevelSelectScript : MonoBehaviour
     }
 
     public void SelectShip(GameObject shipPrefab){
+        GameObject snd = Instantiate<GameObject>(soundPrefab);
+        snd.GetComponent<SFXScript>().sfx = clickSFX;
+
         FindObjectOfType<DataTracker>().selectedShip = shipPrefab;
+    }
+
+    public void ToggleSimpleControls(){
+        GameObject snd = Instantiate<GameObject>(soundPrefab);
+        snd.GetComponent<SFXScript>().sfx = clickSFX;
+        
+        DataTracker.originalControls = !DataTracker.originalControls;
+    }
+
+    public void ToggleOptionsMenu(){
+        optionsMenu.SetActive(!optionsMenu.activeInHierarchy);
+    }
+
+    public void TogglePlaytestMode(){        
+        FindObjectOfType<DataTracker>().ToggleTestMode();
     }
 }

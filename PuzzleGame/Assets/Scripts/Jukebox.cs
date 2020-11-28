@@ -27,4 +27,8 @@ public class Jukebox : MonoBehaviour
         GetComponent<AudioSource>().clip = song;
         GetComponent<AudioSource>().Play();
     }
+
+    public void SetLoop(bool looping){
+        GetComponent<AudioSource>().loop = looping;
+    }
 }

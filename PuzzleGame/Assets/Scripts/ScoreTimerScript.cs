@@ -21,6 +21,7 @@ public class ScoreTimerScript : MonoBehaviour
     private int score;
     public int timerStart;
     public Image specialMoveIcon;
+    public Image portraitIcon;
     private float timer;
     private int multiplier;
     private LevelSetupScript levelSetupScript;
@@ -43,6 +44,10 @@ public class ScoreTimerScript : MonoBehaviour
     public AudioClip clickSFX;
     private bool timeDrain = false;
     private bool stopTimer = false;
+    private Sprite[] portraits;
+    private float setPortraitTimer;
+    private int setPortraitIndex;
+    public Text controlsTutorialText;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +55,12 @@ public class ScoreTimerScript : MonoBehaviour
         timer = timerStart;
         multiplier = 1;
         blocksUsed = 0;
+
+        LevelSetupScript lss = FindObjectOfType<LevelSetupScript>();
+        if (lss != null){
+            FindObjectOfType<Jukebox>().PlaySong(lss.loadSong);
+            FindObjectOfType<Jukebox>().SetLoop(true);
+        }
     }
 
     // Update is called once per frame
@@ -77,6 +88,32 @@ public class ScoreTimerScript : MonoBehaviour
         if (isPaused){
             return;
         }
+
+
+        if (portraits == null){
+            portraits = FindObjectOfType<CannonScript>().portraits;
+        }
+        if (portraits != null){
+            setPortraitTimer -= Time.deltaTime;
+            if (timeDrain){
+                if (failureScreen.activeInHierarchy){
+                    portraitIcon.sprite = portraits[7];
+                } else {
+                    portraitIcon.sprite = portraits[6];
+                }
+            } else if (failureScreen.activeInHierarchy){
+                portraitIcon.sprite = portraits[5];
+            } else if (victoryScreen.activeInHierarchy){
+                portraitIcon.sprite = portraits[3];
+            } else if (setPortraitTimer > 0f){
+                portraitIcon.sprite = portraits[setPortraitIndex];
+            } else if (timer < 20f){
+                portraitIcon.sprite = portraits[4];
+            } else {
+                portraitIcon.sprite = portraits[0];
+            }
+        }
+
         if (levelSetupScript == null){
             levelSetupScript = FindObjectOfType<LevelSetupScript>();
             if (levelSetupScript != null){
@@ -89,6 +126,12 @@ public class ScoreTimerScript : MonoBehaviour
                 missionName = levelSetupScript.missionName;
                 levelIndex = levelSetupScript.index;
             }
+        }
+
+        if (DataTracker.originalControls){
+            controlsTutorialText.text = "STEER: Left/Right\nTHRUST: Up\nBRAKE: Down\nSHOOT BLOCK: Spacebar\nSPECIAL: Left Shift\nRETRY: R\nPAUSE: Escape";
+        } else {
+            controlsTutorialText.text = "FLY SHIP: Left/Right/Up/Down\nSHOOT BLOCK: Spacebar\nSPECIAL: Left Shift\nRETRY: R\nPAUSE: Escape";
         }
 
         LevelSelectScript.currentMenu = levelIndex;
@@ -150,10 +193,10 @@ public class ScoreTimerScript : MonoBehaviour
         } else {
             string str = "SPECIAL : " + spMove.displayName;
             if (spMove.GetCanBeUsed()){
-                str += "\n\n[Press Left Shift]";
+                str += "\n[Press Left Shift]";
                 specialMoveIcon.sprite = spMove.iconReady;
             } else {
-                str += "\n\nAlready used!";
+                str += "\nAlready used!";
                 specialMoveIcon.sprite = spMove.iconUsed;
             }
             specialMoveText.text = str;
@@ -179,6 +222,7 @@ public class ScoreTimerScript : MonoBehaviour
 
         score += chainLength*multiplier*scoreScale;
         multiplier++;
+        SetPortrait(2);
     }
 
     public int GetScoreScale(){
@@ -234,7 +278,7 @@ public class ScoreTimerScript : MonoBehaviour
             Destroy(lss.gameObject);
         }
         if (nextLevelSetup != null){
-            FindObjectOfType<Jukebox>().PlaySong(nextLevelSetup.GetComponent<LevelSetupScript>().loadSong);
+            LevelSelectScript.currentMenu = nextLevelSetup.GetComponent<LevelSetupScript>().index;
             if (nextLevel.Equals(SceneManager.GetActiveScene().name)){
                 Instantiate<GameObject>(nextLevelSetup);
             }
@@ -253,7 +297,6 @@ public class ScoreTimerScript : MonoBehaviour
         string quitLevel = "";
         if (lss != null){
             quitLevel = lss.quitLevel;
-            FindObjectOfType<Jukebox>().PlaySong(lss.GetComponent<LevelSetupScript>().quitSong);
             Destroy(lss.gameObject);
         }
         SceneManager.LoadScene(quitLevel);
@@ -278,5 +321,10 @@ public class ScoreTimerScript : MonoBehaviour
 
     public void StopTimer(){
         stopTimer = true;
+    }
+
+    public void SetPortrait(int index){
+        setPortraitIndex = index;
+        setPortraitTimer = 5f;
     }
 }

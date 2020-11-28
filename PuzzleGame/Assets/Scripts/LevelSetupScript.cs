@@ -16,7 +16,6 @@ public class LevelSetupScript : MonoBehaviour
     public string missionName;
     public string missionTip;
     public AudioClip loadSong;
-    public AudioClip quitSong;
     public bool isBossBattle;
     public int index;
     // Start is called before the first frame update

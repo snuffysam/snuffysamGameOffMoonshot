@@ -33,7 +33,7 @@ public class SpecialMove : MonoBehaviour
     }
 
     protected virtual void UseSpecial(){
-
+        FindObjectOfType<ScoreTimerScript>().SetPortrait(1);
     }
 
     public bool GetCanBeUsed(){

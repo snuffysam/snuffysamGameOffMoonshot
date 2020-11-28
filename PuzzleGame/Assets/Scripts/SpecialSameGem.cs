@@ -12,6 +12,7 @@ public class SpecialSameGem : SpecialMove
     }
 
     protected override void UseSpecial(){
+        base.UseSpecial();
         GemGenerator gg = FindObjectOfType<GemGenerator>();
         if (gg == null){
             return;

@@ -14,6 +14,7 @@ public class SpecialWildCard : SpecialMove
 
     // Update is called once per frame
     protected override void UseSpecial(){
+        base.UseSpecial();
         GameObject go = Instantiate<GameObject>(wildCardPrefab);
         Vector3 towardsPlanet = Vector2.zero;
         PlanetScript planet = GetComponent<CannonScript>().GetPlanet();

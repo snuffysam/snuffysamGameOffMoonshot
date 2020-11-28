@@ -48,6 +48,7 @@
      <Compile Include="Assets\Scripts\BombScript.cs" />
      <Compile Include="Assets\Scripts\BullHareBoss.cs" />
      <Compile Include="Assets\Scripts\CannonScript.cs" />
+     <Compile Include="Assets\Scripts\CharacterSelectButton.cs" />
      <Compile Include="Assets\Scripts\DataTracker.cs" />
      <Compile Include="Assets\Scripts\DisplayTotalEarnings.cs" />
      <Compile Include="Assets\Scripts\DustBunnyBossScript.cs" />

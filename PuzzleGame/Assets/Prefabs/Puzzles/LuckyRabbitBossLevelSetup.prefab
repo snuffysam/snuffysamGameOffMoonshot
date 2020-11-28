@@ -56,7 +56,7 @@ MonoBehaviour:
   missionName: Lady Luck
   missionTip: AIEEEEE! A- a- what even IS that thing?! Well, there's no time to worry
     about that! I-I-I-I've only got a few seconds left to destroy this moon!
-  loadSong: {fileID: 8300000, guid: e57b6677ebd8d4dd38eb42385aaa130e, type: 3}
-  quitSong: {fileID: 8300000, guid: dc270cc34bab84ae9a5948367b84e9aa, type: 3}
+  loadSong: {fileID: 8300000, guid: 1094e225a9cbd49bf8916e6dff6a2c74, type: 3}
+  quitSong: {fileID: 8300000, guid: 421e35068ebdf414e98631aae69e0653, type: 3}
   isBossBattle: 1
   index: 4

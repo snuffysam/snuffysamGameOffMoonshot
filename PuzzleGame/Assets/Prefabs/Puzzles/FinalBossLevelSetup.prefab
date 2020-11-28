@@ -54,7 +54,6 @@ MonoBehaviour:
   RNG_order: 0
   missionName: Lunar Last Stand
   missionTip: 
-  loadSong: {fileID: 8300000, guid: e57b6677ebd8d4dd38eb42385aaa130e, type: 3}
-  quitSong: {fileID: 8300000, guid: dc270cc34bab84ae9a5948367b84e9aa, type: 3}
+  loadSong: {fileID: 8300000, guid: 9c6165eda10534aa98a42fab46ee72d5, type: 3}
   isBossBattle: 1
   index: 4

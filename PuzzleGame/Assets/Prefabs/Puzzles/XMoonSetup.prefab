@@ -56,6 +56,6 @@ MonoBehaviour:
   missionName: X Marks The Spot
   missionTip: 
   loadSong: {fileID: 8300000, guid: 8e92be09ad386479f9b36f6c9ff1b9da, type: 3}
-  quitSong: {fileID: 8300000, guid: dc270cc34bab84ae9a5948367b84e9aa, type: 3}
+  quitSong: {fileID: 8300000, guid: 421e35068ebdf414e98631aae69e0653, type: 3}
   isBossBattle: 0
   index: 0

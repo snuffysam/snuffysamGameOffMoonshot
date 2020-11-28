@@ -9,6 +9,8 @@ public class VictoryScreenScript : MonoBehaviour
     public ScoreTimerScript scoreTimerScript;
     public Text finalScoreText, blocksUsedText, blocksUsedMultiplier, blocksUsedScaled, timeBonusText, timeBonusMultiplier, timeBonusScaled, profitText;
     public GameObject retryButton, nextButton, quitButton;
+    public GameObject soundPrefab;
+    public AudioClip appearSFX, profitSFX;
     private int index = 0;
     private float timer = 0f;
     // Start is called before the first frame update
@@ -52,6 +54,14 @@ public class VictoryScreenScript : MonoBehaviour
                 retryButton.SetActive(true);
                 nextButton.SetActive(true);
                 quitButton.SetActive(true);
+            }
+
+            if (index == 7){
+                GameObject snd = Instantiate<GameObject>(soundPrefab);
+                snd.GetComponent<SFXScript>().sfx = profitSFX;
+            } else if (index < 9) {
+                GameObject snd = Instantiate<GameObject>(soundPrefab);
+                snd.GetComponent<SFXScript>().sfx = appearSFX;
             }
             index++;
         }
