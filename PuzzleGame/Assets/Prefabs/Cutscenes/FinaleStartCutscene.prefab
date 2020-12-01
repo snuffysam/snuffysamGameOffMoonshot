@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8177434098092518042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8529503611540875960}
+  - component: {fileID: 1819123984725703642}
+  m_Layer: 0
+  m_Name: FinaleStartCutscene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8529503611540875960
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8177434098092518042}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1819123984725703642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8177434098092518042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 316fdec6cab1c4e5fb58caa836eed017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoTime: 0
+  art:
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  text:
+  - '"GANG, WE''VE GOT TROUBLE!"'
+  - ACHILLES-4 slid into the headquarters of the Lunar Demolition Force.
+  - Lily, Kit, and Ska'ay were already inside, on one of the benches. Ska'ay was
+    sitting on Lily's lap and leaning backward. Ska'ay's skull was on the table,
+    and Kit held a bowl under her head to keep it from spilling into the floor. Lily
+    was pouring a glass of sugar water into the hole in Ska'ay's chin.
+  - '"Yeah, Kil, we''re kinda in enough trouble as-is," said Lily.'
+  - '"Ska''ay!!!" shouted ACHILLES-4. "What happened?!"'
+  - '"Ska''ay was attacked by a witch, greater than colon left parenthesis," said
+    Kit. "A pelozite woman, of the Net Clan."'
+  - '"I''m not sure why, but this Net has been building robots infused with magic
+    spells... spells designed to turn stars into black holes."'
+  - '"Th-that''s exactly the sort of trouble I ran into! The witch''s name is Hapi
+    We-Net! She rebuilt one of my old coworkers, and put a spell in his head so he
+    would blow up the system''s star!"'
+  - '"Rebuilt, huh?" said Lily. "I guess if she''s not making anything of her own,
+    that would explain why we all saw different robots. But... darn it, what''re
+    we supposed to do! We can''t just let her hurt Ska''ay!"'
+  - '"Jack said her base of operations is in the Qhiq''aiks system! Maybe we''ll
+    be able to find her there!"'
+  - '"It does seem to be our only chance, comma underscore comma," said Kit.'
+  - '"Ska''ay, are you good to come along?" said Lily. "I can stay behind with you,
+    if you want..."'
+  - '"N-no, I''m good. Just... just hand me my shell, please..."'
+  - Lily picked Ska'ay's empty skull off of the table, and held it over Kit's bowl.
+    Ska'ay flexed her neck muscles, pushing her gelatin face back into her exoskeleton.
+  - Ska'ay's antenna popped out of their holes as she adjusted her skull's alignment.
+  - '"P-partners for life?" said Ska''ay.'
+  - '"Partners for life!" shouted the others.'
+  - '"Let''s stop that witch!" shouted Lily.'
+  textEmphasized: 010000000000000000000000000000000000
+  music:
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 5f39b5bb18f214b11a1d7d2ddbd9bc5d, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  musicLoop: 010101010101010101010101010100000000
+  setupPrefab: {fileID: 0}

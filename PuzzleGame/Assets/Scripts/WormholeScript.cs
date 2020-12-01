@@ -5,6 +5,8 @@ using UnityEngine;
 public class WormholeScript : MonoBehaviour
 {
     public WormholeScript partner;
+    public GameObject soundPrefab;
+    public AudioClip specialSFX;
     private Vector3 displacement;
     private Vector3 prevPosition;
     private Dictionary<Collider2D, float> recentlyTeleported;
@@ -67,6 +69,9 @@ public class WormholeScript : MonoBehaviour
             col.gameObject.transform.position = partner.transform.position + addition3*0.5f;
             partner.AddCollider(col);
             AddCollider(col);
+
+            GameObject snd = Instantiate<GameObject>(soundPrefab);
+            snd.GetComponent<SFXScript>().sfx = specialSFX;
         }
     }
 

@@ -218,7 +218,7 @@ MonoBehaviour:
     type: 3}
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  explodeSFX: {fileID: 8300000, guid: e7deddf42273c49d89ad6e55c8b33015, type: 3}
+  explodeSFX: {fileID: 8300000, guid: 05893c22c62b147a8bdf769d3a608b36, type: 3}
   antigravity: 0
 --- !u!1 &2346766517072603050
 GameObject:
@@ -569,7 +569,7 @@ MonoBehaviour:
     type: 3}
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  explodeSFX: {fileID: 8300000, guid: e7deddf42273c49d89ad6e55c8b33015, type: 3}
+  explodeSFX: {fileID: 8300000, guid: 05893c22c62b147a8bdf769d3a608b36, type: 3}
   antigravity: 0
 --- !u!1 &2346766517549441777
 GameObject:
@@ -724,7 +724,7 @@ MonoBehaviour:
     type: 3}
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  explodeSFX: {fileID: 8300000, guid: e7deddf42273c49d89ad6e55c8b33015, type: 3}
+  explodeSFX: {fileID: 8300000, guid: 05893c22c62b147a8bdf769d3a608b36, type: 3}
   antigravity: 0
 --- !u!1 &2346766517846569721
 GameObject:
@@ -893,7 +893,7 @@ MonoBehaviour:
     type: 3}
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  explodeSFX: {fileID: 8300000, guid: e7deddf42273c49d89ad6e55c8b33015, type: 3}
+  explodeSFX: {fileID: 8300000, guid: 05893c22c62b147a8bdf769d3a608b36, type: 3}
   antigravity: 0
 --- !u!1 &2346766517881274734
 GameObject:
@@ -1054,7 +1054,7 @@ MonoBehaviour:
     type: 3}
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  explodeSFX: {fileID: 8300000, guid: e7deddf42273c49d89ad6e55c8b33015, type: 3}
+  explodeSFX: {fileID: 8300000, guid: 05893c22c62b147a8bdf769d3a608b36, type: 3}
   antigravity: 0
 --- !u!1001 &2346766516437612951
 PrefabInstance:
@@ -1483,6 +1483,11 @@ PrefabInstance:
       propertyPath: match
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 695243454055751822, guid: b488c2bbff5d9437e966f890db9962b8,
+        type: 3}
+      propertyPath: explodeSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 05893c22c62b147a8bdf769d3a608b36, type: 3}
     - target: {fileID: 695243454055751823, guid: b488c2bbff5d9437e966f890db9962b8,
         type: 3}
       propertyPath: m_LocalPosition.x

@@ -15,6 +15,9 @@ MonoBehaviour:
   displayName: 
   iconReady: {fileID: 21300000, guid: 4ebb8c4439e874bf0b28b9c91a068ffe, type: 3}
   iconUsed: {fileID: 21300000, guid: 9648c6d6c3aca4e7fa297f51bf2edcce, type: 3}
+  soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
+    type: 3}
+  specialSFX: {fileID: 8300000, guid: 6053f61fafebb43dd969a034da577b54, type: 3}
 --- !u!1001 &7764293935469321189
 PrefabInstance:
   m_ObjectHideFlags: 0

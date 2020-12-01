@@ -6,6 +6,9 @@ public class HapiBossScript : MonoBehaviour
 {
     public Sprite[] frames;
     public GameObject bombPrefab, skullPrefab, spellRef;
+    public GameObject soundPrefab;
+    public AudioClip prepareSpell;
+    public AudioClip castSpell;
     private float stateTimer = 0f;
     private int state = 0;
     private GameObject createdSpell;
@@ -49,6 +52,9 @@ public class HapiBossScript : MonoBehaviour
                 createdSpell.transform.rotation = spellRef.transform.rotation;
                 createdSpell.transform.localScale = spellRef.transform.localScale;
                 createdSpell.GetComponent<PolygonCollider2D>().enabled = false;
+
+                GameObject snd = Instantiate<GameObject>(soundPrefab);
+                snd.GetComponent<SFXScript>().sfx = prepareSpell;
             }
         } else if (state == 1){
             GetComponent<SpriteRenderer>().sprite = frames[1];
@@ -96,6 +102,9 @@ public class HapiBossScript : MonoBehaviour
                 }
                 createdSpell = null;
                 }
+
+                GameObject snd = Instantiate<GameObject>(soundPrefab);
+                snd.GetComponent<SFXScript>().sfx = castSpell;
             }
         } else {
             GetComponent<Rigidbody2D>().velocity = Vector2.zero;

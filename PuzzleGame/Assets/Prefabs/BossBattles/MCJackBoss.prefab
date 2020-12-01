@@ -155,6 +155,10 @@ MonoBehaviour:
   explosionLevel: 0.75
   explosionEffectPrefab: {fileID: 1924699497313199142, guid: cbc3420811944429d86c83114d2fc710,
     type: 3}
+  soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
+    type: 3}
+  shootSound: {fileID: 8300000, guid: 9cb5f3be307e94657b45c42782844463, type: 3}
+  catchSound: {fileID: 8300000, guid: bd7427b7e5c0a4f83adaa1dcef37bf8d, type: 3}
 --- !u!1 &8464773656080729708
 GameObject:
   m_ObjectHideFlags: 0

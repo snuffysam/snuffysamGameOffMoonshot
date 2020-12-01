@@ -2495,7 +2495,9 @@ MonoBehaviour:
   portraitIcon: {fileID: 2094764332}
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  clickSFX: {fileID: 8300000, guid: 8390643bf7eb148bebeccc5a1d27b2b1, type: 3}
+  clickSFX: {fileID: 8300000, guid: c9456862b70c64659af1d3f1e16a3524, type: 3}
+  lowTimeSFX: {fileID: 8300000, guid: a93b623b220e44b96936a59fa1bff621, type: 3}
+  timeUpSFX: {fileID: 8300000, guid: cb867e4e22a8d44828e82dfdb1266839, type: 3}
   controlsTutorialText: {fileID: 1746422727}
 --- !u!1 &1022986078
 GameObject:
@@ -4439,8 +4441,8 @@ MonoBehaviour:
   quitButton: {fileID: 1933549960}
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  appearSFX: {fileID: 8300000, guid: 37a0f9d0479ce48ce8c6501496d8b2a9, type: 3}
-  profitSFX: {fileID: 8300000, guid: 3cc726332f26b488c8943be2953d774f, type: 3}
+  appearSFX: {fileID: 8300000, guid: d0e09b915031b4797a04b821d40b7fe5, type: 3}
+  profitSFX: {fileID: 8300000, guid: 72c1a32a75954481b8463e95a70559e4, type: 3}
 --- !u!1 &1726732483
 GameObject:
   m_ObjectHideFlags: 0

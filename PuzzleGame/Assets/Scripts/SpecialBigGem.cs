@@ -7,6 +7,7 @@ public class SpecialBigGem : SpecialMove
     public GameObject explosionPrefab;
     public GameObject soundPrefab;
     public AudioClip explodeSFX;
+    public AudioClip throwSFX;
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -16,6 +17,10 @@ public class SpecialBigGem : SpecialMove
 
     protected override void UseSpecial(){
         base.UseSpecial();
+
+        GameObject snd = Instantiate<GameObject>(soundPrefab);
+        snd.GetComponent<SFXScript>().sfx = throwSFX;
+
         GameObject gem = GetComponent<CannonScript>().SpawnGem();
         gem.transform.localScale = new Vector3(1f, 1f, 1f)*2.5f;
         gem.GetComponent<Rigidbody2D>().mass = 2.5f;

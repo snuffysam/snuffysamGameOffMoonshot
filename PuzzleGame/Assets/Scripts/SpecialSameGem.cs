@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SpecialSameGem : SpecialMove
 {
+    public GameObject soundPrefab;
+    public AudioClip specialSFX;
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -13,6 +15,10 @@ public class SpecialSameGem : SpecialMove
 
     protected override void UseSpecial(){
         base.UseSpecial();
+
+        GameObject snd = Instantiate<GameObject>(soundPrefab);
+        snd.GetComponent<SFXScript>().sfx = specialSFX;
+
         GemGenerator gg = FindObjectOfType<GemGenerator>();
         if (gg == null){
             return;

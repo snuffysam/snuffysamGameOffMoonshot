@@ -57,6 +57,8 @@ MonoBehaviour:
   missionTip: HA! Are you kidding me?! This moon is nothing compared to my BIG BLOCKS!
     I'll be done with these contracts in no time!
   loadSong: {fileID: 8300000, guid: 8e92be09ad386479f9b36f6c9ff1b9da, type: 3}
-  quitSong: {fileID: 8300000, guid: 421e35068ebdf414e98631aae69e0653, type: 3}
   isBossBattle: 0
   index: 0
+  startingCutscene: {fileID: 5073519356852486925, guid: 663925502fee748ffa4f7cbcc05cd14c,
+    type: 3}
+  endingCutscene: {fileID: 0}

@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8058490067976653231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7563642393983289741}
+  - component: {fileID: 546982128954136815}
+  m_Layer: 0
+  m_Name: KitEndingCutscene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7563642393983289741
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8058490067976653231}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &546982128954136815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8058490067976653231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 316fdec6cab1c4e5fb58caa836eed017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoTime: 0
+  art:
+  - {fileID: 21300000, guid: 246a96722a6ed48d08b2dbce50f9ab74, type: 3}
+  - {fileID: 21300000, guid: 246a96722a6ed48d08b2dbce50f9ab74, type: 3}
+  - {fileID: 21300000, guid: 246a96722a6ed48d08b2dbce50f9ab74, type: 3}
+  - {fileID: 21300000, guid: c0bee7f8336bb407787d7cee7ce60036, type: 3}
+  - {fileID: 21300000, guid: c0bee7f8336bb407787d7cee7ce60036, type: 3}
+  - {fileID: 21300000, guid: c0bee7f8336bb407787d7cee7ce60036, type: 3}
+  - {fileID: 21300000, guid: c0bee7f8336bb407787d7cee7ce60036, type: 3}
+  text:
+  - The dust bunny stood on the back of Kit's ship. A pair of kunai struck its arms,
+    disabling them.
+  - Kit walked up to the bunny, wearing his space suit.
+  - '"There. That should keep you from causing any more havoc, greater-than colon
+    vertical bar."'
+  - Kit peered at a symbol carved into the robot's forehead.
+  - '"Hold on... that carving... it''s the symbol of the Net Clan, colon zero! It''s
+    the mark of a pelozite witch!"'
+  - The symbol glowed green. Kit dodged out of the way as the bunny fired a green
+    laser out of its forhead.
+  - The beam of light hit the red supergiant behind Kit. Kit stared in horror as
+    the star was sucked inwards, and was formed into a black hole.
+  textEmphasized: 00000000000000
+  music:
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  musicLoop: 01010101010101
+  setupPrefab: {fileID: 0}

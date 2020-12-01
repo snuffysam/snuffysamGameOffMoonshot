@@ -159,7 +159,8 @@ MonoBehaviour:
     type: 3}
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  explodeSFX: {fileID: 8300000, guid: e7deddf42273c49d89ad6e55c8b33015, type: 3}
+  explodeSFX: {fileID: 8300000, guid: 05893c22c62b147a8bdf769d3a608b36, type: 3}
+  antigravity: 0
 --- !u!1 &6582736790008690126
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,7 +320,8 @@ MonoBehaviour:
     type: 3}
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  explodeSFX: {fileID: 8300000, guid: e7deddf42273c49d89ad6e55c8b33015, type: 3}
+  explodeSFX: {fileID: 8300000, guid: 05893c22c62b147a8bdf769d3a608b36, type: 3}
+  antigravity: 0
 --- !u!1 &6582736790088850087
 GameObject:
   m_ObjectHideFlags: 0

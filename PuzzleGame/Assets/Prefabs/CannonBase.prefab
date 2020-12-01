@@ -113,8 +113,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: fc0ebd96eada046c4b5a40f9acc776cc, type: 3}
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  brakeSFX: {fileID: 8300000, guid: 5a3fb1948eead4404af92d351de5c9c0, type: 3}
-  thrusterBurstSFX: {fileID: 8300000, guid: eb52a19e7ad804a1d8349e1db166487a, type: 3}
+  brakeSFX: {fileID: 0}
+  thrusterBurstSFX: {fileID: 0}
+  thrusterSFX:
+  - {fileID: 8300000, guid: 67748d3a848544cd685fe79acfce4d7a, type: 3}
+  - {fileID: 8300000, guid: eabcf6c9c4bd148a4b20cbb8c5614c87, type: 3}
+  - {fileID: 8300000, guid: 947b5e87427c5441ba1d0e7d643f5630, type: 3}
+  - {fileID: 8300000, guid: 9234e08cad5574a52aa90e950b71e3c4, type: 3}
+  - {fileID: 8300000, guid: db5dc5d658cf84da986b3916d2df59a6, type: 3}
   portraits:
   - {fileID: 21300000, guid: 620a7c05ca38a42369657915d3e520f7, type: 3}
   - {fileID: 21300000, guid: 3719dfb1341874b8fa70a6a41066cf76, type: 3}

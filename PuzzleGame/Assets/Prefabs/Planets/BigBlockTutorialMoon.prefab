@@ -175,7 +175,8 @@ MonoBehaviour:
     type: 3}
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  explodeSFX: {fileID: 8300000, guid: e7deddf42273c49d89ad6e55c8b33015, type: 3}
+  explodeSFX: {fileID: 8300000, guid: 05893c22c62b147a8bdf769d3a608b36, type: 3}
+  antigravity: 0
 --- !u!1 &6839603892362547561
 GameObject:
   m_ObjectHideFlags: 0
@@ -186,7 +187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6839603892362547566}
   m_Layer: 0
-  m_Name: BigGemTutorialMoon
+  m_Name: BigBlockTutorialMoon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

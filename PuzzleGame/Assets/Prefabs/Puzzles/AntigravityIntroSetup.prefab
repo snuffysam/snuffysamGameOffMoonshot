@@ -57,3 +57,6 @@ MonoBehaviour:
   loadSong: {fileID: 8300000, guid: 523ae0a2fa9374979a37061e0bb16abe, type: 3}
   isBossBattle: 0
   index: 0
+  startingCutscene: {fileID: 8177434098092518042, guid: 76723c408245e44b1bff6a9c63f8f9ed,
+    type: 3}
+  endingCutscene: {fileID: 0}

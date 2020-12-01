@@ -220,7 +220,7 @@ MonoBehaviour:
     type: 3}
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  explodeSFX: {fileID: 8300000, guid: e7deddf42273c49d89ad6e55c8b33015, type: 3}
+  explodeSFX: {fileID: 8300000, guid: 05893c22c62b147a8bdf769d3a608b36, type: 3}
   antigravity: 0
 --- !u!1 &869515653183359220
 GameObject:
@@ -515,7 +515,7 @@ MonoBehaviour:
     type: 3}
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  explodeSFX: {fileID: 8300000, guid: e7deddf42273c49d89ad6e55c8b33015, type: 3}
+  explodeSFX: {fileID: 8300000, guid: 05893c22c62b147a8bdf769d3a608b36, type: 3}
   antigravity: 0
 --- !u!1 &2945186084666942880
 GameObject:
@@ -670,7 +670,7 @@ MonoBehaviour:
     type: 3}
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  explodeSFX: {fileID: 8300000, guid: e7deddf42273c49d89ad6e55c8b33015, type: 3}
+  explodeSFX: {fileID: 8300000, guid: 05893c22c62b147a8bdf769d3a608b36, type: 3}
   antigravity: 0
 --- !u!1 &2945186084736157148
 GameObject:
@@ -790,6 +790,12 @@ MonoBehaviour:
   - {fileID: 4926498125808965530}
   hapiObject: {fileID: 6284770776756917736}
   dyingHapi: {fileID: 869515653183359220}
+  endingCutsceneA: {fileID: 8678892484507622475, guid: ad2349ee8ac0742b6a4230ed6dabd989,
+    type: 3}
+  endingCutsceneB: {fileID: 326504634705274814, guid: 939ad550869f0451d85b2768a94b1372,
+    type: 3}
+  finalCutsceneControl: {fileID: 5315880477683099129, guid: 429acd4d5e09748ab95232249526b2b7,
+    type: 3}
 --- !u!1 &2945186084913495583
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,7 +949,7 @@ MonoBehaviour:
     type: 3}
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  explodeSFX: {fileID: 8300000, guid: e7deddf42273c49d89ad6e55c8b33015, type: 3}
+  explodeSFX: {fileID: 8300000, guid: 05893c22c62b147a8bdf769d3a608b36, type: 3}
   antigravity: 0
 --- !u!1 &2945186084994331995
 GameObject:
@@ -1118,7 +1124,7 @@ MonoBehaviour:
     type: 3}
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  explodeSFX: {fileID: 8300000, guid: e7deddf42273c49d89ad6e55c8b33015, type: 3}
+  explodeSFX: {fileID: 8300000, guid: 05893c22c62b147a8bdf769d3a608b36, type: 3}
   antigravity: 0
 --- !u!1 &3498008489414530189
 GameObject:
@@ -1265,7 +1271,7 @@ MonoBehaviour:
     type: 3}
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  explodeSFX: {fileID: 8300000, guid: e7deddf42273c49d89ad6e55c8b33015, type: 3}
+  explodeSFX: {fileID: 8300000, guid: 05893c22c62b147a8bdf769d3a608b36, type: 3}
   antigravity: 0
 --- !u!114 &5654043306782085085
 MonoBehaviour:
@@ -1519,7 +1525,7 @@ MonoBehaviour:
     type: 3}
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  explodeSFX: {fileID: 8300000, guid: e7deddf42273c49d89ad6e55c8b33015, type: 3}
+  explodeSFX: {fileID: 8300000, guid: 05893c22c62b147a8bdf769d3a608b36, type: 3}
   antigravity: 0
 --- !u!1 &8500306095463249417
 GameObject:
@@ -2708,6 +2714,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2945186084736157122}
     m_Modifications:
+    - target: {fileID: 495754806465328047, guid: 9fda1d0b1d27e4beebd052525c907ec5,
+        type: 3}
+      propertyPath: explodeSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 05893c22c62b147a8bdf769d3a608b36, type: 3}
     - target: {fileID: 1888824105876087250, guid: 9fda1d0b1d27e4beebd052525c907ec5,
         type: 3}
       propertyPath: m_LocalPosition.x

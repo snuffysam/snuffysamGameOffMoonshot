@@ -1,0 +1,109 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7370887602781744054
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7018949712293424020}
+  - component: {fileID: 1011164101544360694}
+  m_Layer: 0
+  m_Name: SkaayStartCutscene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7018949712293424020
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7370887602781744054}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1011164101544360694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7370887602781744054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 316fdec6cab1c4e5fb58caa836eed017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoTime: 0
+  art:
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  text:
+  - Ska'ay's rocket rocketed through the stars.
+  - '"Let''s see... oh! This contract is from Earth! Lily''s homeworld! Maybe I should
+    say hello to her parents...?"'
+  - '"Oh! Oh no! I''m already super late! I... I better hurry, or we won''t make
+    any money this job~!"'
+  - Ska'ay's ship touched down in a small Swiss island town. A human man in a red
+    striped suit sat on a park bench as Ska'ay ran out of her ship.
+  - '"Lunar Demolition Force, at your service, s-sir!" stuttered Ska''ay!'
+  - '"Pleased to meet ya, kid!" said the human, putting his arm around Ska''ay''s
+    shoulder. "The names Bridges! Lin Bridges! Woah, wait, you''re a voinan?"'
+  - '"Y-yeah?"'
+  - '"A voinan in construction? Aren''t you all supposed to be proud warriors?"'
+  - '"I-I-we can''t ALL be warriors! What would we eat?!"'
+  - '"Hey, do what you want with your life," said Lin. "My parents were underwater
+    polo referees, but look at me now!"'
+  - '"That''s... that''s very nice! So, what''s the job?"'
+  - '"Oh, you''ll love this, kid! So, ya know how there''s a big empty space between
+    Mars and Jupiter?"'
+  - '"I don''t really know this system, sorry!"'
+  - '"Well, I figured I''d build a brand new tourist attraction in the orbit between
+    the two planets, made out of a bunch of rocks! I call it... the Rubble Ring!"'
+  - '"I bought the rights to all the moons of Jupiter! See, I''ve got the deed, right
+    here! Just blow those up, and I''ll take it from there!"'
+  - '"Y-y-you got it, sir! And remember, don''t let the door hit you where the Lunar
+    Demolition Force split you!"'
+  textEmphasized: 00000000000000000000000000000000
+  music:
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  musicLoop: 01010101010101010101010101010101
+  setupPrefab: {fileID: 0}

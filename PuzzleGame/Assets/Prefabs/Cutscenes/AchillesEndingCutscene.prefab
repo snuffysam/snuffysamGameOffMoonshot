@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8111695493004577023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8624532620792449245}
+  - component: {fileID: 1788016250700667327}
+  m_Layer: 0
+  m_Name: AchillesEndingCutscene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8624532620792449245
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8111695493004577023}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1788016250700667327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8111695493004577023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 316fdec6cab1c4e5fb58caa836eed017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoTime: 0
+  art:
+  - {fileID: 21300000, guid: 73d24b27ff37943839346dc2393fef27, type: 3}
+  - {fileID: 21300000, guid: 73d24b27ff37943839346dc2393fef27, type: 3}
+  - {fileID: 21300000, guid: 73d24b27ff37943839346dc2393fef27, type: 3}
+  - {fileID: 21300000, guid: 73d24b27ff37943839346dc2393fef27, type: 3}
+  - {fileID: 21300000, guid: 73d24b27ff37943839346dc2393fef27, type: 3}
+  - {fileID: 21300000, guid: 73d24b27ff37943839346dc2393fef27, type: 3}
+  - {fileID: 21300000, guid: 73d24b27ff37943839346dc2393fef27, type: 3}
+  - {fileID: 21300000, guid: 73d24b27ff37943839346dc2393fef27, type: 3}
+  - {fileID: 21300000, guid: 73d24b27ff37943839346dc2393fef27, type: 3}
+  - {fileID: 21300000, guid: 73d24b27ff37943839346dc2393fef27, type: 3}
+  - {fileID: 21300000, guid: 73d24b27ff37943839346dc2393fef27, type: 3}
+  text:
+  - ACHILLES-4 hopped out of his ship and floated towards his former co-worker.
+  - '"JACK!!!" shouted ACHILLES-4. "Are you ok?! Who did this to you?!"'
+  - Jack weakly opened his eyes. The star of Angelworld blazed over the strongman's
+    shoulder.
+  - '"Sorry, old friend," chuckled the master of ceremonies. "But it looks like this
+    is the end of the line."'
+  - The symbol on Jack's forehead glowed green.
+  - ACHILLES-4 grabbed the engraved forehead plate, and tore it off of Jack's head.
+  - There was a burst of green light, and ACHILLES-4's palm was torn apart. ACHILLES-4
+    looked down as some loose pieces of his hand compressed themselves into nothingness.
+    The symbol on the piece of metal was gone.
+  - ACHILLES-4 grabbed his friend with his still-working hand. "I'm not losing you
+    again, Jack!!! Now, talk to me! What's going on?! Who re-assembled you?! What
+    was that thing on your head?! Why'd you shoot a laser at the sun?!"
+  - Jack sighed in relief. "I was re-assembled by a pelozite woman... named Hapi
+    We-Net."
+  - '"I don''t know what her plan is... but her moon-base is in the Qhiq''aiks system.
+    I''m... I''m sorry, Kil."'
+  - '"It''s ok, Jack," said ACHILLES-4. "It''s ok. Now, let''s get you some help!!!"'
+  textEmphasized: 0000000000000000000000
+  music:
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  musicLoop: 0101010101010101010101
+  setupPrefab: {fileID: 0}

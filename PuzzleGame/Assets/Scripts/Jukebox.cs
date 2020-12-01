@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Jukebox : MonoBehaviour
 {
-    public static float musicVolume = 0.5f;
-    public static float sfxVolume = 0f;
+    public static float musicVolume = 0.6f;
+    public static float sfxVolume = 0.4f;
     public static float voiceVolume = 0.5f;
     // Start is called before the first frame update
     void Awake()

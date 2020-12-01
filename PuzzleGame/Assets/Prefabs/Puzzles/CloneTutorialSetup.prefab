@@ -57,6 +57,8 @@ MonoBehaviour:
   missionTip: This moon dust will make it difficult to place down blocks. Fortunately,
     my Block Cloning technique will strike true, semicolon three. Now, to work!
   loadSong: {fileID: 8300000, guid: 8e92be09ad386479f9b36f6c9ff1b9da, type: 3}
-  quitSong: {fileID: 8300000, guid: 421e35068ebdf414e98631aae69e0653, type: 3}
   isBossBattle: 0
   index: 0
+  startingCutscene: {fileID: 8057466962684715200, guid: 2cda298a84e904b3b9b2254cbe31ad15,
+    type: 3}
+  endingCutscene: {fileID: 0}

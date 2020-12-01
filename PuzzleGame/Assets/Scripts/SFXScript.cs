@@ -7,7 +7,7 @@ public class SFXScript : MonoBehaviour
     public AudioClip sfx;
     public bool isLoop;
     private float age;
-    public static int maxSFXPlaying = 10;
+    public static int maxSFXPlaying = 15;
     // Start is called before the first frame update
     void Awake()
     {
@@ -32,7 +32,7 @@ public class SFXScript : MonoBehaviour
         for (int i = 0; i < n; i++){
             float longestTime = -1f;
             SFXScript oldestSource = null;
-            foreach (SFXScript temp in sources){
+            foreach (SFXScript temp in activeSources){
                 if (temp.GetAge() > longestTime){
                     longestTime = temp.GetAge();
                     oldestSource = temp;
@@ -41,6 +41,7 @@ public class SFXScript : MonoBehaviour
             activeSources.Remove(oldestSource);
             Destroy(oldestSource.gameObject);
         }
+        Debug.Log(activeSources.Count);
 
         aSource.clip = sfx;
         aSource.volume = Jukebox.sfxVolume;

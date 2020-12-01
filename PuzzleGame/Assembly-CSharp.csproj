@@ -49,13 +49,17 @@
      <Compile Include="Assets\Scripts\BullHareBoss.cs" />
      <Compile Include="Assets\Scripts\CannonScript.cs" />
      <Compile Include="Assets\Scripts\CharacterSelectButton.cs" />
+     <Compile Include="Assets\Scripts\CutsceneController.cs" />
+     <Compile Include="Assets\Scripts\CutsceneData.cs" />
      <Compile Include="Assets\Scripts\DataTracker.cs" />
      <Compile Include="Assets\Scripts\DisplayTotalEarnings.cs" />
+     <Compile Include="Assets\Scripts\Dummy.cs" />
      <Compile Include="Assets\Scripts\DustBunnyBossScript.cs" />
      <Compile Include="Assets\Scripts\DustScript.cs" />
      <Compile Include="Assets\Scripts\ExplosionEffectScript.cs" />
      <Compile Include="Assets\Scripts\FadeOut.cs" />
      <Compile Include="Assets\Scripts\FinalBossScript.cs" />
+     <Compile Include="Assets\Scripts\FinalCutsceneControl.cs" />
      <Compile Include="Assets\Scripts\GemGenerator.cs" />
      <Compile Include="Assets\Scripts\GemScript.cs" />
      <Compile Include="Assets\Scripts\GravitySwapScript.cs" />

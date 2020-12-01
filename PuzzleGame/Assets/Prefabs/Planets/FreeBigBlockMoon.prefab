@@ -213,7 +213,8 @@ MonoBehaviour:
     type: 3}
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  explodeSFX: {fileID: 8300000, guid: e7deddf42273c49d89ad6e55c8b33015, type: 3}
+  explodeSFX: {fileID: 8300000, guid: 05893c22c62b147a8bdf769d3a608b36, type: 3}
+  antigravity: 0
 --- !u!1 &727492973111608260
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,7 +368,8 @@ MonoBehaviour:
     type: 3}
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  explodeSFX: {fileID: 8300000, guid: e7deddf42273c49d89ad6e55c8b33015, type: 3}
+  explodeSFX: {fileID: 8300000, guid: 05893c22c62b147a8bdf769d3a608b36, type: 3}
+  antigravity: 0
 --- !u!114 &727492974157061348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -390,7 +392,8 @@ MonoBehaviour:
     type: 3}
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  explodeSFX: {fileID: 8300000, guid: e7deddf42273c49d89ad6e55c8b33015, type: 3}
+  explodeSFX: {fileID: 8300000, guid: 05893c22c62b147a8bdf769d3a608b36, type: 3}
+  antigravity: 0
 --- !u!114 &4052028330091886543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -425,7 +428,8 @@ MonoBehaviour:
     type: 3}
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  explodeSFX: {fileID: 8300000, guid: e7deddf42273c49d89ad6e55c8b33015, type: 3}
+  explodeSFX: {fileID: 8300000, guid: 05893c22c62b147a8bdf769d3a608b36, type: 3}
+  antigravity: 0
 --- !u!114 &6537142057754151771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1288,6 +1292,11 @@ PrefabInstance:
       propertyPath: explosionLevel
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 695243454055751822, guid: b488c2bbff5d9437e966f890db9962b8,
+        type: 3}
+      propertyPath: explodeSFX
+      value: 
+      objectReference: {fileID: 8300000, guid: 05893c22c62b147a8bdf769d3a608b36, type: 3}
     - target: {fileID: 695243454055751823, guid: b488c2bbff5d9437e966f890db9962b8,
         type: 3}
       propertyPath: m_LocalPosition.x

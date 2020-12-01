@@ -1,0 +1,116 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1563778621028384211
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1337954971991784945}
+  - component: {fileID: 9075156781137685651}
+  m_Layer: 0
+  m_Name: LilyStartCutscene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1337954971991784945
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563778621028384211}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9075156781137685651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563778621028384211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 316fdec6cab1c4e5fb58caa836eed017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoTime: 0
+  art:
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  text:
+  - Lily's rocket blasted through deep space.
+  - '"Ok.. first stop is a planet listed only as Avraks," mumbled Lily. "It''s in
+    the habitable zone of its star, but there''s no population... which probably
+    means it''s some rich dude''s private getaway!"'
+  - '"Let''s get some money!!!"'
+  - The ship soared into the blue sky of the planet below.
+  - A humanoid alien with purple skin and drooping ears stood by a landing pad. He
+    was wearing a finely tailored suit. Next to him was a smaller alien, wearing
+    a striped outfit and licking a large lollipop.
+  - Lily's ship landed in front of the duo. The human rolled out of the door, ending
+    up in a dramatic pose.
+  - '"Ta-da! The Lunar Demolition Force has arrived!"'
+  - '"Ah, splendid, just in time," said the alien in the tailored suit. "Welcome
+    to Planet Avraks. My name is Avraks, and this is my young, Averol."'
+  - '"Papa! Papa!" shouted Avreol. "What sort of alien is that?!"'
+  - "\u201CHmm... it's hard to tell with the odd skin pattern, but I believe that
+    is a human woman,\u201D said Avraks. \u201CI recognize its kind from all the
+    'internet films' they are so fond of producing!\u201D"
+  - "\u201CWow!!! Papa, what's an 'internet film'? I want to watch one!\u201D"
+  - "Lily squinted at the pair. \u201C'Odd skin pattern'? Are you... talking about
+    my clothes?\u201D"
+  - '"Present, Papa! I want my present!"'
+  - "\u201CAll in due time, young one,\u201D replied Avraks. \u201CYes, human woman.
+    As you may have gathered, my young has completed the trials of infancy and is
+    inching ever-closer to maturity! For this special occasion, I shall be granting
+    him a present!\u201D"
+  - "\u201CMy young one... there is nothing he loves more than seeing something explode!
+    For his present, I would like you to disintegrate every moon orbiting this planet!
+    If you complete this task in a timely manner, I shall be granting you a large
+    sum of your human dollars!\u201D"
+  - Lily hopped into her ship with a salute. "That's all ya had to say, Mr. Avraks
+    sir! Kid, keep an eye out, this'll be one heck of a show!"
+  textEmphasized: 00000000000000000000000000000000
+  music:
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  musicLoop: 01010101010101010101010101010101
+  setupPrefab: {fileID: 0}

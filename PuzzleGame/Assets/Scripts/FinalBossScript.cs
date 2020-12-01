@@ -11,6 +11,7 @@ public class FinalBossScript : MonoBehaviour
     public PlanetScript[] phase2Planets;
     public GameObject hapiObject;
     public GameObject dyingHapi;
+    public GameObject endingCutsceneA, endingCutsceneB, finalCutsceneControl;
     private float timer;
     // Start is called before the first frame update
     void Start()
@@ -96,7 +97,14 @@ public class FinalBossScript : MonoBehaviour
             dyingHapi.SetActive(true);
             timer += Time.deltaTime;
             if (timer > 10f){
+                timer = 0f;
                 FindObjectOfType<ScoreTimerScript>().SetHighScore();
+                if (DataTracker.GetSum() >= 1000000){
+                    Instantiate<GameObject>(endingCutsceneB);
+                } else {
+                    Instantiate<GameObject>(endingCutsceneA);
+                }
+                Instantiate<GameObject>(finalCutsceneControl);
                 FindObjectOfType<ScoreTimerScript>().NextLevel();
             }
         }

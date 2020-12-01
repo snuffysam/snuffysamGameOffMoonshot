@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class StartMenuScript : MonoBehaviour
 {
     public GameObject soundPrefab;
+    public GameObject openingCutscene;
     public AudioClip clickSFX;
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class StartMenuScript : MonoBehaviour
         GameObject snd = Instantiate<GameObject>(soundPrefab);
         snd.GetComponent<SFXScript>().sfx = clickSFX;
 
-        SceneManager.LoadScene("MenuScene");
+        Instantiate<GameObject>(openingCutscene);
+        SceneManager.LoadScene("CutsceneScene");
     }
 }

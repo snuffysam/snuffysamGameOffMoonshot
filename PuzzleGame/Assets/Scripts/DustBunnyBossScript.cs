@@ -13,6 +13,8 @@ public class DustBunnyBossScript : MonoBehaviour
     public float explosionLevel = 0.75f;
     public GameObject explosionEffectPrefab;
     public GameObject dustPrefab;
+    public GameObject soundPrefab;
+    public AudioClip shootDustSound;
     private float frameTimer;
     private bool currentFrame;
     private float startTimer;
@@ -54,6 +56,8 @@ public class DustBunnyBossScript : MonoBehaviour
         if (spawnDustTimer > spawnDustMaxTimer){
             spawnDustTimer = 0f;
             GameObject go = Instantiate<GameObject>(dustPrefab);
+            GameObject snd = Instantiate<GameObject>(soundPrefab);
+            snd.GetComponent<SFXScript>().sfx = shootDustSound;
             if (Random.Range(1f, 100f) < 50f){
                 go.transform.position = transform.position + transform.right*0.1f;
             } else {

@@ -12,6 +12,8 @@ public class LuckyRabbitScript : MonoBehaviour
     private float startTimer;
     public float explosionLevel = 0.75f;
     public GameObject explosionEffectPrefab;
+    public GameObject soundPrefab;
+    public AudioClip shootSound;
     private PlanetScript planet;
     // Start is called before the first frame update
     void Start()
@@ -103,6 +105,8 @@ public class LuckyRabbitScript : MonoBehaviour
             GameObject go = Instantiate<GameObject>(prefabs[shapeMin]);
             go.transform.position = transform.position*0.83f;
             go.transform.localScale = go.transform.localScale*0.1f;
+            GameObject snd = Instantiate<GameObject>(soundPrefab);
+            snd.GetComponent<SFXScript>().sfx = shootSound;
         }
         if (state == 3){
             if (stateTimer > 0.2f){

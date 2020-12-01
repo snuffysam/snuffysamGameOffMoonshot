@@ -57,6 +57,8 @@ MonoBehaviour:
   missionTip: Y-yipes! It doesn't seem like I have much time to mess around! I-I-I
     better use my Wild Card block to finish off this contract!
   loadSong: {fileID: 8300000, guid: 8e92be09ad386479f9b36f6c9ff1b9da, type: 3}
-  quitSong: {fileID: 8300000, guid: 421e35068ebdf414e98631aae69e0653, type: 3}
   isBossBattle: 0
   index: 0
+  startingCutscene: {fileID: 7370887602781744054, guid: ef5093a90e9424f3fb3ce47e14a99a87,
+    type: 3}
+  endingCutscene: {fileID: 0}

@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7589009040326107864
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7958816189494010618}
+  - component: {fileID: 77498938786247576}
+  m_Layer: 0
+  m_Name: LilyBossCutscene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7958816189494010618
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7589009040326107864}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &77498938786247576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7589009040326107864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 316fdec6cab1c4e5fb58caa836eed017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoTime: 0
+  art:
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  - {fileID: 21300000, guid: b7b035980a5054d2dae931db88c98026, type: 3}
+  text:
+  - Lily stood on the surface of a kidney-shaped moon, wearing her space suit. She
+    wiped the outside of her helmet with a red cloth.
+  - '"Phew! That was a lot to handle. All right, only one moon left to go!"'
+  - Some pebbles landed at Lily's feet. Lily turned around, and saw a creature that
+    appeared to be a hare with a bull's head, scraping its paws against the surface
+    of the moon.
+  - '"Huh... is that a bull-hare? What''s that doin'' here? Did Avreol lose a pet?"'
+  - The bull-hare turned to Lily. Its eyes flashed in fury. Lily looked down at the
+    bright-red washcloth in her hand.
+  - '"...Well, shoot me sideways."'
+  - The beast charged at Lily. Lily jumped out of the way, dropping her cloth as
+    she did. The bull-hare tore the fabric asunder as Lily landed on the back of
+    her ship.
+  - '"Woah nelly! Glad I wasn''t anywhere near that!"'
+  - Lily grabbed a pair of reins and pulled. Her ship launched away from the lunar
+    surface.
+  - '"Better finish off this contract before that thing causes any real damage!"'
+  textEmphasized: 00000000000000000000
+  music:
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: e57b6677ebd8d4dd38eb42385aaa130e, type: 3}
+  - {fileID: 8300000, guid: e57b6677ebd8d4dd38eb42385aaa130e, type: 3}
+  - {fileID: 8300000, guid: e57b6677ebd8d4dd38eb42385aaa130e, type: 3}
+  - {fileID: 8300000, guid: e57b6677ebd8d4dd38eb42385aaa130e, type: 3}
+  - {fileID: 8300000, guid: e57b6677ebd8d4dd38eb42385aaa130e, type: 3}
+  - {fileID: 8300000, guid: e57b6677ebd8d4dd38eb42385aaa130e, type: 3}
+  musicLoop: 01010101010101010101
+  setupPrefab: {fileID: 0}

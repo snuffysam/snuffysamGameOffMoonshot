@@ -17,6 +17,9 @@ MonoBehaviour:
   iconUsed: {fileID: 21300000, guid: 31d49db3d337442258db7ed878714c6c, type: 3}
   wildCardPrefab: {fileID: 5391906215985374230, guid: 0aa4a05d230374d9caa89fd9df017a5c,
     type: 3}
+  soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
+    type: 3}
+  drawSound: {fileID: 8300000, guid: 5f899c580c48e46a8ad041089b634ec0, type: 3}
 --- !u!1001 &9129821633125694301
 PrefabInstance:
   m_ObjectHideFlags: 0

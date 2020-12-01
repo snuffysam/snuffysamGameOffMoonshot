@@ -145,7 +145,7 @@ MonoBehaviour:
     type: 3}
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  explodeSFX: {fileID: 8300000, guid: e7deddf42273c49d89ad6e55c8b33015, type: 3}
+  explodeSFX: {fileID: 8300000, guid: 05893c22c62b147a8bdf769d3a608b36, type: 3}
   antigravity: 0
 --- !u!114 &7829513533389607153
 MonoBehaviour:
@@ -168,6 +168,10 @@ MonoBehaviour:
   skullPrefab: {fileID: 9143927971535981060, guid: 88e2e626dace445478e29677dd4e5d61,
     type: 3}
   spellRef: {fileID: 7629830437223869567}
+  soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
+    type: 3}
+  prepareSpell: {fileID: 8300000, guid: 6b973d12338734736a64dd42aeac1038, type: 3}
+  castSpell: {fileID: 8300000, guid: f669801e2a96f47bfa17080f0c96958a, type: 3}
 --- !u!1 &7629830437223869567
 GameObject:
   m_ObjectHideFlags: 0

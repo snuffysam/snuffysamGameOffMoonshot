@@ -18,6 +18,8 @@ public class LevelSetupScript : MonoBehaviour
     public AudioClip loadSong;
     public bool isBossBattle;
     public int index;
+    public GameObject startingCutscene;
+    public GameObject endingCutscene;
     // Start is called before the first frame update
     void Awake()
     {

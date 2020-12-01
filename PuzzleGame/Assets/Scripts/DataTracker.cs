@@ -18,11 +18,8 @@ public class DataTracker : MonoBehaviour
     void Start()
     {
         levelScores = new int[levelCount];
-        if (testMode){
-            for (int i = 0; i < levelScores.Length; i++){
-                levelScores[i] = 1;
-            }
-        }
+        testMode = !testMode;
+        ToggleTestMode();
     }
 
     // Update is called once per frame
@@ -63,7 +60,9 @@ public class DataTracker : MonoBehaviour
         testMode = !testMode;
         if (testMode){
             for (int i = 0; i < levelScores.Length; i++){
-                levelScores[i] = 1;
+                if (levelScores[i] == 0){
+                    levelScores[i] = 1;
+                }
             }
         } else {
             for (int i = 0; i < levelScores.Length; i++){

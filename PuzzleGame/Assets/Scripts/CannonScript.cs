@@ -10,6 +10,7 @@ public class CannonScript : MonoBehaviour
     public GameObject soundPrefab;
     public AudioClip brakeSFX;
     public AudioClip thrusterBurstSFX;
+    public AudioClip[] thrusterSFX;
     public Sprite[] portraits;
     public GameObject gravityArrow;
     private int index;
@@ -29,6 +30,7 @@ public class CannonScript : MonoBehaviour
     private float thrust;
     private float maxSpeed = 5f;
     private bool spawnGemBool = false;
+    private GameObject thrusterSoundObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -50,9 +52,18 @@ public class CannonScript : MonoBehaviour
         return planet;
     }
 
+    void OnDestroy(){
+        if (thrusterSoundObject != null){
+            Destroy(thrusterSoundObject);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
+        if (ScoreTimerScript.isPaused && thrusterSoundObject != null){
+            Destroy (thrusterSoundObject);
+        }
         if (vss == null){
             vss = FindObjectOfType<VictoryScreenScript>();
         } else {
@@ -196,7 +207,7 @@ public class CannonScript : MonoBehaviour
 
             float gravityAngle = Vector2.SignedAngle(new Vector2(gravityArrow.transform.up.x, gravityArrow.transform.up.y),towardsPlanet);
             gravityArrow.transform.RotateAround(transform.position, new Vector3(0f,0f,1f), gravityAngle);
-            gravityArrow.transform.localScale = new Vector3(1f, 1f, 1f)*planet.GetComponent<Rigidbody2D>().mass;
+            gravityArrow.transform.localScale = new Vector3(1f, 1f, 1f);
             float alpha = 0.67f;
             Color c = new Color(1f, 1f, 1f, alpha);
             if (index == 0){
@@ -281,17 +292,18 @@ public class CannonScript : MonoBehaviour
             } else {
                 thrusterFade = 1f;
             }
-            thrusting = false;
+            thrusterFade = 0f;
+            //thrusting = false;
             if (thrusting){
                 thrusting = false;
-                GameObject snd = Instantiate<GameObject>(soundPrefab);
-                snd.GetComponent<SFXScript>().sfx = thrusterBurstSFX;
+                thrusterSoundObject = Instantiate<GameObject>(soundPrefab);
+                thrusterSoundObject.GetComponent<SFXScript>().sfx = thrusterSFX[Random.Range(0,thrusterSFX.Length)];
             }
             GetComponent<AudioSource>().volume = Jukebox.sfxVolume*thrusterFade*GetComponent<Rigidbody2D>().velocity.magnitude/maxSpeed;
     }
 
     public void StopThrusting(){
-
+        Destroy (thrusterSoundObject);
         SpriteRenderer spr = GetComponent<SpriteRenderer>();
             spr.sprite = frames[0];
             spriteIndex = 0;

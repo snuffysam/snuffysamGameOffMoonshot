@@ -112,3 +112,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   partner: {fileID: 0}
+  soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
+    type: 3}
+  specialSFX: {fileID: 8300000, guid: ce7c5d0b57ef04a0682f14fca9a9a09d, type: 3}

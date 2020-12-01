@@ -5,6 +5,8 @@ using UnityEngine;
 public class SpecialWildCard : SpecialMove
 {
     public GameObject wildCardPrefab;
+    public GameObject soundPrefab;
+    public AudioClip drawSound;
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -27,5 +29,8 @@ public class SpecialWildCard : SpecialMove
         go.transform.localScale = new Vector3(1f, 1f, 1f)*0.1f;
         go.GetComponent<Rigidbody2D>().velocity = (new Vector3(0f, 0f, 0f)-transform.position).normalized;
         FindObjectOfType<ScoreTimerScript>().ResetMultiplier();
+
+        GameObject snd = Instantiate<GameObject>(soundPrefab);
+        snd.GetComponent<SFXScript>().sfx = drawSound;
     }
 }

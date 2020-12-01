@@ -1,0 +1,160 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7684852649590025309
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7891681414918106239}
+  - component: {fileID: 208524134886882589}
+  m_Layer: 0
+  m_Name: IntroCutscene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7891681414918106239
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7684852649590025309}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &208524134886882589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7684852649590025309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 316fdec6cab1c4e5fb58caa836eed017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoTime: 0
+  art:
+  - {fileID: 21300000, guid: 2b057a86f1ce7484cb55ed7700373d0c, type: 3}
+  - {fileID: 21300000, guid: 98704129ccacd40d7beea2d007529479, type: 3}
+  - {fileID: 21300000, guid: 96eee7df9547d4edd991a754e1b37a02, type: 3}
+  - {fileID: 21300000, guid: 3d283355dbe6340c094a838188472c19, type: 3}
+  - {fileID: 21300000, guid: d02714b85ee60426a8aa43b5e7db17d7, type: 3}
+  - {fileID: 21300000, guid: d02714b85ee60426a8aa43b5e7db17d7, type: 3}
+  - {fileID: 21300000, guid: 3dfacc287434a4932984ac8f340360c6, type: 3}
+  - {fileID: 21300000, guid: 2c35ce4d89e1d4a429b93127709ba046, type: 3}
+  - {fileID: 21300000, guid: b4194ca0f953f4dd3acfe9f718b594a8, type: 3}
+  - {fileID: 21300000, guid: b4194ca0f953f4dd3acfe9f718b594a8, type: 3}
+  - {fileID: 21300000, guid: c61c9bf64300c4e73b586294553f2a0d, type: 3}
+  - {fileID: 21300000, guid: bc3f585db25da4984bd26aa66bcfcae6, type: 3}
+  - {fileID: 21300000, guid: bc3f585db25da4984bd26aa66bcfcae6, type: 3}
+  - {fileID: 21300000, guid: 08583516feed9406f9acaa4db0e13a35, type: 3}
+  - {fileID: 21300000, guid: e021cd6bec85049e387d7510b5c6c283, type: 3}
+  - {fileID: 21300000, guid: ca09f2d9dddf247fa98bf04d09852694, type: 3}
+  - {fileID: 21300000, guid: 130aba2ddd2ee4bf6a841a2e71877458, type: 3}
+  - {fileID: 21300000, guid: 09e5f0e659c964210b874c6906327460, type: 3}
+  - {fileID: 21300000, guid: 0eb66fe18856d40439fdf72972f08d41, type: 3}
+  - {fileID: 21300000, guid: 97f7e885f95224d47866c1d322131026, type: 3}
+  - {fileID: 21300000, guid: 08da6a52a1fd84505853fc1b8a8385e7, type: 3}
+  - {fileID: 21300000, guid: 01fdd0b6b9a2249b4bc78de850278a54, type: 3}
+  - {fileID: 21300000, guid: 25ea5b250ad96409f943eac11efaff16, type: 3}
+  - {fileID: 21300000, guid: 01fdd0b6b9a2249b4bc78de850278a54, type: 3}
+  - {fileID: 21300000, guid: ec5c73c6293aa4243bcb60136521bca4, type: 3}
+  - {fileID: 21300000, guid: 3ce71478917c54d33817033dd4709917, type: 3}
+  - {fileID: 21300000, guid: 0d778a183f82c4a9596ddf00c5f6e88f, type: 3}
+  - {fileID: 21300000, guid: e9f9d164787f64bf1966d42f18c8bf69, type: 3}
+  - {fileID: 21300000, guid: e529bf310a3c04a8c999e6049316823c, type: 3}
+  - {fileID: 21300000, guid: 3f6f34a5f0b224dd2a9989528f422b58, type: 3}
+  - {fileID: 21300000, guid: cfeacc5c2b3d346288a562ea4c790fae, type: 3}
+  - {fileID: 21300000, guid: cfeacc5c2b3d346288a562ea4c790fae, type: 3}
+  text:
+  - Has this ever happened to you?!
+  - Captain's log. We have finally arrived on the uncharted planet of SH-149. Now,
+    to establish a base-
+  - HHRK THE TIDES
+  - Then you need to call...
+  - The Lunar Demolition Force!
+  - For all your moon elimination needs!
+  - Our expert team of pilots will destroy your moon in the cleanest and most efficient
+    way possible...
+  - ...By dropping large wooden blocks from orbit.
+  - If we don't blow up your moon within 30 minutes, it's free! So, what are you
+    waitin' for?! Call 555-MOON-B-GONE to hire the Lunar Demolition Force today!
+  - And remember...
+  - Don't let the door hit ya where the Lunar Demolition Force split ya!
+  - 
+  - RING RING RING!
+  - Lunar Demolition Force, please hold! Y-yes, this is the Lunar Demolition Force,
+    p-please hold!
+  - 
+  - "Perhaps our \u201C30 minutes or it's free\u201D promise was too ambitious, period
+    underscore period. If we can't figure out how to handle these incoming jobs...
+    our dream may be as dead as a Zin, colon left parenthesis."
+  - 
+  - NO!!! It can't be! Our dream... we were supposed to earn a million dollars with
+    our business! How did we go so wrong!!!
+  - 
+  - Yeah, Kit, ya ain't wrong. There's no way we can get through all these contracts.
+    We'll just have to pick whichever job pays the most, and hope that new jobs'll
+    come in tomorrow.
+  - 
+  - Unless...
+  - Unless...?
+  - We split up. We each have our own ships, we each know how to fly. If we split
+    up, we can get four times the work done!
+  - B-b-but we're supposed to be a team! We're the Lunar Demolition Force, not the
+    Lunar Demolition I-Individuals!!
+  - Sigh... Ska'ay, we'll still be a team. We'll just be together... apart.
+  - Let's take a chance! By the time we meet up again, we'll be millionaires! Now,
+    who's with me?!
+  - 
+  - Partners for life?
+  - Partners for life!
+  - Lunar Demolition Force, move out!
+  - LET'S GO MAKE A MILLION DOLLARS!!!
+  textEmphasized: 0000000001000000000001000100000000000000000000000000000000000001
+  music:
+  - {fileID: 8300000, guid: 421e35068ebdf414e98631aae69e0653, type: 3}
+  - {fileID: 8300000, guid: 421e35068ebdf414e98631aae69e0653, type: 3}
+  - {fileID: 8300000, guid: 421e35068ebdf414e98631aae69e0653, type: 3}
+  - {fileID: 8300000, guid: 5f39b5bb18f214b11a1d7d2ddbd9bc5d, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 1094e225a9cbd49bf8916e6dff6a2c74, type: 3}
+  - {fileID: 8300000, guid: 1094e225a9cbd49bf8916e6dff6a2c74, type: 3}
+  - {fileID: 8300000, guid: 1094e225a9cbd49bf8916e6dff6a2c74, type: 3}
+  - {fileID: 8300000, guid: 1094e225a9cbd49bf8916e6dff6a2c74, type: 3}
+  - {fileID: 8300000, guid: 1094e225a9cbd49bf8916e6dff6a2c74, type: 3}
+  - {fileID: 8300000, guid: 1094e225a9cbd49bf8916e6dff6a2c74, type: 3}
+  - {fileID: 8300000, guid: 1094e225a9cbd49bf8916e6dff6a2c74, type: 3}
+  - {fileID: 8300000, guid: 1094e225a9cbd49bf8916e6dff6a2c74, type: 3}
+  - {fileID: 8300000, guid: 1094e225a9cbd49bf8916e6dff6a2c74, type: 3}
+  - {fileID: 8300000, guid: 1094e225a9cbd49bf8916e6dff6a2c74, type: 3}
+  - {fileID: 8300000, guid: 1094e225a9cbd49bf8916e6dff6a2c74, type: 3}
+  - {fileID: 8300000, guid: 1094e225a9cbd49bf8916e6dff6a2c74, type: 3}
+  - {fileID: 8300000, guid: 1094e225a9cbd49bf8916e6dff6a2c74, type: 3}
+  - {fileID: 8300000, guid: 1094e225a9cbd49bf8916e6dff6a2c74, type: 3}
+  - {fileID: 8300000, guid: 5f39b5bb18f214b11a1d7d2ddbd9bc5d, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  musicLoop: 0101010000000101010101010101010101010101010101010101000000000000
+  setupPrefab: {fileID: 0}

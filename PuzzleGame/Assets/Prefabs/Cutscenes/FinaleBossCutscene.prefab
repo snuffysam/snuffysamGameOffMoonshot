@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8692393773536688819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9188294037110405777}
+  - component: {fileID: 1216905700147981299}
+  m_Layer: 0
+  m_Name: FinaleBossCutscene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9188294037110405777
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8692393773536688819}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1216905700147981299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8692393773536688819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 316fdec6cab1c4e5fb58caa836eed017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoTime: 0
+  art:
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  - {fileID: 21300000, guid: 07a2b708cb4f64500a6ff6436d937647, type: 3}
+  - {fileID: 21300000, guid: 07a2b708cb4f64500a6ff6436d937647, type: 3}
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  - {fileID: 21300000, guid: 07a2b708cb4f64500a6ff6436d937647, type: 3}
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  - {fileID: 21300000, guid: 07a2b708cb4f64500a6ff6436d937647, type: 3}
+  - {fileID: 21300000, guid: 07a2b708cb4f64500a6ff6436d937647, type: 3}
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  - {fileID: 21300000, guid: 07a2b708cb4f64500a6ff6436d937647, type: 3}
+  - {fileID: 21300000, guid: 07a2b708cb4f64500a6ff6436d937647, type: 3}
+  - {fileID: 21300000, guid: 5e3c01b7c43254e0fb3bb885111bf53d, type: 3}
+  - {fileID: 21300000, guid: 07a2b708cb4f64500a6ff6436d937647, type: 3}
+  - {fileID: 21300000, guid: 07a2b708cb4f64500a6ff6436d937647, type: 3}
+  - {fileID: 21300000, guid: 07a2b708cb4f64500a6ff6436d937647, type: 3}
+  text:
+  - ACHILLES-4 flew towards a moon orbiting a desert planet. He was carrying Lily
+    Lovinton, Kit Tu-Vaz, and Ska'ay.
+  - As they approached the moon, it became clear that they were looking at an orbiting
+    factory. The factory was made up with a spherical core with rings spinning around
+    it. With each cycle of the rings, a newly-refurbished rabbit-themed robot was
+    spit out of the factory.
+  - Hapi We-Net was floating in front of the moon, in a violet crystal bubble. She
+    waved her wand like a conductor's baton, inducing the factory's production with
+    her magic.
+  - '"Ahh... perfection, greater than colon three," beamed Hapi. "Fly, my children
+    of scraps! Soon, every star in the sky will be eliminated!"'
+  - '"Hey, witch!" shouted ACHILLES-4. "Pick on a celestial body your own size!"'
+  - '"Ah, if it isn''t the Lunar Demolition Force!" taunted Hapi. "A human, a Vaz,
+    and an android. And look, the berry-flavored one''s here too! Still confident
+    in the power of your armor to protect you, greater than colon three?"'
+  - A lasso caught the crystal bubble, and pulled tight around it. All at once, the
+    witch was yanked towards the crew, and was soon face to face with Lily Lovinton.
+  - '"Stupid rabbit!" shouted Lily. "Nobody threatens my partners and gets away with
+    it! Now, what in Sam Hill are you doin'' here?!"'
+  - '"You don''t know much about witchcraft, do you, colon three? You see, many of
+    my most potent potions require moonlight to be brewed. Which means that I can''t
+    brew those potions while the sun''s out."'
+  - '"So, I figured, why not make it easier for myself? I''ll destroy every star
+    in the galaxy! That way, the only light visible will be moonlight!!!"'
+  - '"Curses, greater than colon left parenthesis!" grumbled Kit. "Your logic may
+    be impeccable, witch, but your plan shall not come to fruition!"'
+  - '"Y''know... we''re not so different, Lunar Demolition Force," beguiled Hapi.
+    "You destroy moons, and I... well, I just dream bigger."'
+  - '"Surely there''s some of you unsatisfied with your current career aspirations?
+    Any takers? How about you, ninja?"'
+  - '"H-hey, Hapi!" stammered Ska''ay. "You''re dead wrong! The Lunar Demolition
+    Force isn''t just a business... it''s a family! A-and we''ll never be torn apart!"'
+  - '"Hm. Very well, semi-colon three."'
+  - Hapi's eyes began to glow a bright white. The lasso's knot undid itself, and
+    the witch teleported onto the surface of her factory moon.
+  - '"If it''s a fight you want... then it''s a fight you''ll get, Lunar Demolition
+    Force!"'
+  textEmphasized: 0000000000000000000000000000000000
+  music:
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  musicLoop: 0101010101010101010101010101010101
+  setupPrefab: {fileID: 0}

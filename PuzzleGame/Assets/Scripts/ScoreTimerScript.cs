@@ -26,9 +26,9 @@ public class ScoreTimerScript : MonoBehaviour
     private int multiplier;
     private LevelSetupScript levelSetupScript;
     private int blocksUsed;
-    private int scoreScale = 1000;
-    private int blocksUsedScale = -10;
-    private int timeScale = 100;
+    private int scoreScale = 1300;
+    private int blocksUsedScale = -15;
+    private int timeScale = 150;
     private PlanetScript planet;
     private float levelWinTimer;
     private float levelLoseTimer;
@@ -42,12 +42,16 @@ public class ScoreTimerScript : MonoBehaviour
     bool setTimer = false;
     public GameObject soundPrefab;
     public AudioClip clickSFX;
+    public AudioClip lowTimeSFX;
+    public AudioClip timeUpSFX;
     private bool timeDrain = false;
     private bool stopTimer = false;
     private Sprite[] portraits;
     private float setPortraitTimer;
     private int setPortraitIndex;
     public Text controlsTutorialText;
+    private bool[] alreadyPlayedTime;
+    private float[] timeToPlay;
     // Start is called before the first frame update
     void Start()
     {
@@ -61,6 +65,9 @@ public class ScoreTimerScript : MonoBehaviour
             FindObjectOfType<Jukebox>().PlaySong(lss.loadSong);
             FindObjectOfType<Jukebox>().SetLoop(true);
         }
+
+        alreadyPlayedTime = new bool[]{false, false, false, false, false, false, false, false};
+        timeToPlay = new float[]{30f, 20f, 10f, 5f, 4f, 3f, 2f, 1f};
     }
 
     // Update is called once per frame
@@ -163,9 +170,22 @@ public class ScoreTimerScript : MonoBehaviour
                 mult = 0f;
             }
             timer -= Time.deltaTime*mult;
+
+            for (int t = 0; t < timeToPlay.Length && t < alreadyPlayedTime.Length; t++){
+                if (timer < timeToPlay[t] && !alreadyPlayedTime[t]){
+                    alreadyPlayedTime[t] = true;
+                    GameObject snd = Instantiate<GameObject>(soundPrefab);
+                    snd.GetComponent<SFXScript>().sfx = lowTimeSFX;
+                }
+            }
+
             if (timer < 0){
                 timer = 0;
 
+                if (!failureScreen.activeInHierarchy){
+                    GameObject snd = Instantiate<GameObject>(soundPrefab);
+                    snd.GetComponent<SFXScript>().sfx = timeUpSFX;
+                }
                 levelLoseTimer += Time.deltaTime;
                 if (levelLoseTimer > timeToDelay){
                     failureScreen.SetActive(true);
@@ -271,19 +291,39 @@ public class ScoreTimerScript : MonoBehaviour
             snd.GetComponent<SFXScript>().sfx = clickSFX;
         }
         LevelSetupScript lss = FindObjectOfType<LevelSetupScript>();
+        bool endingCutscene = false;
         GameObject nextLevelSetup = null;
+        if (FindObjectOfType<CutsceneData>() != null){
+            SceneManager.LoadScene("CutsceneScene");
+            endingCutscene = true;
+        }
         if (lss != null){
+            if (lss.endingCutscene != null){
+                Instantiate<GameObject>(lss.endingCutscene);
+                SceneManager.LoadScene("CutsceneScene");
+                endingCutscene = true;
+            }
             nextLevel = lss.nextLevel;
             nextLevelSetup = lss.nextLevelPrefab;
             Destroy(lss.gameObject);
         }
-        if (nextLevelSetup != null){
-            LevelSelectScript.currentMenu = nextLevelSetup.GetComponent<LevelSetupScript>().index;
-            if (nextLevel.Equals(SceneManager.GetActiveScene().name)){
-                Instantiate<GameObject>(nextLevelSetup);
+        if (!endingCutscene){
+            if (nextLevelSetup != null){
+                if (nextLevelSetup.GetComponent<LevelSetupScript>().startingCutscene != null){
+                    GameObject scs = Instantiate<GameObject>(nextLevelSetup.GetComponent<LevelSetupScript>().startingCutscene);
+                    scs.GetComponent<CutsceneData>().setupPrefab = nextLevelSetup;
+                    SceneManager.LoadScene("CutsceneScene");
+                } else {
+                    LevelSelectScript.currentMenu = nextLevelSetup.GetComponent<LevelSetupScript>().index;
+                    if (nextLevel.Equals(SceneManager.GetActiveScene().name)){
+                        Instantiate<GameObject>(nextLevelSetup);
+                    }
+                    SceneManager.LoadScene(nextLevel);
+                }
+            } else {
+                SceneManager.LoadScene(nextLevel);
             }
         }
-        SceneManager.LoadScene(nextLevel);
     }
 
     public void QuitLevel(){
@@ -295,11 +335,19 @@ public class ScoreTimerScript : MonoBehaviour
         }
         LevelSetupScript lss = FindObjectOfType<LevelSetupScript>();
         string quitLevel = "";
+        bool endingCutscene = false;
         if (lss != null){
+            if (lss.endingCutscene != null && victoryScreen.activeInHierarchy){
+                Instantiate<GameObject>(lss.endingCutscene);
+                SceneManager.LoadScene("CutsceneScene");
+                endingCutscene = true;
+            }
             quitLevel = lss.quitLevel;
             Destroy(lss.gameObject);
         }
-        SceneManager.LoadScene(quitLevel);
+        if (!endingCutscene){
+            SceneManager.LoadScene(quitLevel);
+        }
     }
 
     public void SetPaused(){

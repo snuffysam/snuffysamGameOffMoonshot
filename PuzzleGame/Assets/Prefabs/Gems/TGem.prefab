@@ -121,8 +121,17 @@ MonoBehaviour:
   chain: {fileID: 2078725419477088024, guid: 3b4ba1854d2fd457baf8a684a63bec89, type: 3}
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  collideSFX: {fileID: 8300000, guid: bab7bbf50e8594133a581b488ad6a3bb, type: 3}
-  connectSFX: {fileID: 8300000, guid: bd7427b7e5c0a4f83adaa1dcef37bf8d, type: 3}
+  collideSFX: {fileID: 8300000, guid: 00be3faf94f364461adc0482cfa6f715, type: 3}
+  dustHitSFX: {fileID: 8300000, guid: d0e09b915031b4797a04b821d40b7fe5, type: 3}
+  collideSelfSFX:
+  - {fileID: 8300000, guid: bd7427b7e5c0a4f83adaa1dcef37bf8d, type: 3}
+  - {fileID: 8300000, guid: b1c88a14002a947c28529903b5cb747b, type: 3}
+  - {fileID: 8300000, guid: b90798294dffd47ac87614058c8e673e, type: 3}
+  - {fileID: 8300000, guid: 4153f50c9a23541249d987ca4b0f99d4, type: 3}
+  - {fileID: 8300000, guid: f79ccb840a2fe4dfba9a049f2e2bd29b, type: 3}
+  - {fileID: 8300000, guid: 468398e2611f34582a441fa566edafac, type: 3}
+  connectSFX: {fileID: 0}
+  successSFX: {fileID: 8300000, guid: 171df39d9497343ca9dd04ea1b856c44, type: 3}
 --- !u!60 &8249441490926668718
 PolygonCollider2D:
   m_ObjectHideFlags: 0

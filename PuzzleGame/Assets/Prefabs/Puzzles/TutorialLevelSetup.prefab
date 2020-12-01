@@ -58,6 +58,8 @@ MonoBehaviour:
     to fly around and the spacebar to drop some blocks! If you get stuck, use escape
     to pause the level or R to retry!
   loadSong: {fileID: 8300000, guid: 8e92be09ad386479f9b36f6c9ff1b9da, type: 3}
-  quitSong: {fileID: 8300000, guid: 421e35068ebdf414e98631aae69e0653, type: 3}
   isBossBattle: 0
   index: 0
+  startingCutscene: {fileID: 1563778621028384211, guid: d441d5425dc1c430dad6c58d84b201cf,
+    type: 3}
+  endingCutscene: {fileID: 0}

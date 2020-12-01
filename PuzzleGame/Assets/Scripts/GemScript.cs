@@ -8,7 +8,10 @@ public class GemScript : MonoBehaviour
     public GameObject chain;
     public GameObject soundPrefab;
     public AudioClip collideSFX;
+    public AudioClip dustHitSFX;
+    public AudioClip[] collideSelfSFX;
     public AudioClip connectSFX;
+    public AudioClip successSFX;
     private PlanetScript planet;
     private List<GameObject> chains = new List<GameObject>();
     private List<GameObject> connected = new List<GameObject>();
@@ -106,9 +109,11 @@ public class GemScript : MonoBehaviour
             if (allObjects.Count >= 4){
                 int destroyCount = allObjects.Count;
                 FindObjectOfType<ScoreTimerScript>().AddScore(destroyCount);
+                bool destroyedPlanet = false;
                 foreach (GameObject go in allObjects){
                     if (go.GetComponent<PlanetScript>() != null){
                         go.GetComponent<PlanetScript>().SpawnExplosion();
+                        destroyedPlanet = true;
                     }
                     if (go.GetComponent<GemScript>() != null){
                         go.GetComponent<GemScript>().DestroyAllChains();
@@ -116,6 +121,10 @@ public class GemScript : MonoBehaviour
                     if (go != this.gameObject){
                         Destroy(go);
                     }
+                }
+                if (!destroyedPlanet){
+                    GameObject snd = Instantiate<GameObject>(soundPrefab);
+                    snd.GetComponent<SFXScript>().sfx = successSFX;
                 }
                 Destroy(this.gameObject);
             }
@@ -133,9 +142,12 @@ public class GemScript : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D col){
-        if(GetComponent<Rigidbody2D>().velocity.magnitude > 0.2f && (transform.position-Vector3.zero).magnitude < 11f){
+        if(GetComponent<Rigidbody2D>().velocity.magnitude > 0.1f && (transform.position-Vector3.zero).magnitude < 11f){
             GameObject snd = Instantiate<GameObject>(soundPrefab);
             snd.GetComponent<SFXScript>().sfx = collideSFX;
+            if (col.gameObject.GetComponent<DustScript>() != null){
+                snd.GetComponent<SFXScript>().sfx = dustHitSFX;
+            }
         }
         if (col.gameObject.GetComponent<GemScript>() != null && GetComponent<PlanetScript>() != null){
             GetComponent<Rigidbody2D>().velocity *= 0.75f;
@@ -144,16 +156,16 @@ public class GemScript : MonoBehaviour
         if (col.gameObject.GetComponent<GemScript>() != null && (col.gameObject.GetComponent<GemScript>().shape == shape || shape == -1 || col.gameObject.GetComponent<GemScript>().shape == -1)) { 
             chains.Add(Instantiate<GameObject>(chain));
             connected.Add(col.gameObject);
-            if (gameObject.name.CompareTo(col.gameObject.name) < 0f && (transform.position-Vector3.zero).magnitude < 11f){
+            if (gameObject.name.CompareTo(col.gameObject.name) < 0f && (transform.position-Vector3.zero).magnitude < 11f && false){
                 GameObject snd2 = Instantiate<GameObject>(soundPrefab);
-                snd2.GetComponent<SFXScript>().sfx = connectSFX;
+                snd2.GetComponent<SFXScript>().sfx = collideSelfSFX[Random.Range(0,collideSelfSFX.Length)];
             }
         } else if (col.gameObject.GetComponent<PlanetScript>() != null && col.gameObject.GetComponent<PlanetScript>().match != -1 && (col.gameObject.GetComponent<PlanetScript>().match == shape || shape == -1)){
             chains.Add(Instantiate<GameObject>(chain));
             connected.Add(col.gameObject);
             if ((transform.position-Vector3.zero).magnitude < 11f){
                 GameObject snd2 = Instantiate<GameObject>(soundPrefab);
-                snd2.GetComponent<SFXScript>().sfx = connectSFX;
+                snd2.GetComponent<SFXScript>().sfx = collideSelfSFX[Random.Range(0,collideSelfSFX.Length)];
             }
         }
     }

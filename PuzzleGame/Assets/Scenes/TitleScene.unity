@@ -275,7 +275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelCount: 25
-  testMode: 1
+  testMode: 0
   selectedShip: {fileID: 7199765238781142813, guid: 173e7101a33c845f0b454b1811a953d2,
     type: 3}
 --- !u!1 &1107489752
@@ -667,7 +667,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
-  clickSFX: {fileID: 8300000, guid: 8390643bf7eb148bebeccc5a1d27b2b1, type: 3}
+  openingCutscene: {fileID: 7684852649590025309, guid: 5fa1bfbaab3804aa588c26dff1311f27,
+    type: 3}
+  clickSFX: {fileID: 8300000, guid: c9456862b70c64659af1d3f1e16a3524, type: 3}
 --- !u!114 &1832610155
 MonoBehaviour:
   m_ObjectHideFlags: 0

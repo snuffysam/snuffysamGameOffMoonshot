@@ -16,6 +16,9 @@ public class BullHareBoss : MonoBehaviour
     private GemScript redGem;
     public float explosionLevel = 0.75f;
     public GameObject explosionEffectPrefab;
+    public GameObject soundPrefab;
+    public AudioClip jumpSound;
+    public AudioClip angrySound;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,13 +45,16 @@ public class BullHareBoss : MonoBehaviour
             spr.sprite = frames[0];
             stateTimer += Time.deltaTime;
             if (stateTimer > 0.5f){
-                Vector3 addition = transform.up*Time.deltaTime*250f + transform.right*Time.deltaTime*-100f;
+                Vector3 addition = transform.up*250f/30f + transform.right*-100f/30f;
                 GetComponent<Rigidbody2D>().velocity += new Vector2(addition.x, addition.y);
                 if (planet != null){
                     GetComponent<Rigidbody2D>().velocity += GetComponent<Rigidbody2D>().velocity*3f/(transform.position-planet.transform.position).magnitude;
                 }
                 stateTimer = 0f;
                 state = 1;
+
+                GameObject snd = Instantiate<GameObject>(soundPrefab);
+                snd.GetComponent<SFXScript>().sfx = jumpSound;
             }
             if (planet != null){
                 float angleBetween = Vector3.SignedAngle(transform.up,transform.position-planet.transform.position, new Vector3(0f,0f,1f));
@@ -68,6 +74,9 @@ public class BullHareBoss : MonoBehaviour
             if (redGem != null){
                 state = 2;
                 stateTimer = 0f;
+
+                GameObject snd = Instantiate<GameObject>(soundPrefab);
+                snd.GetComponent<SFXScript>().sfx = angrySound;
             }
         }
         if (state == 1){

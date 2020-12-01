@@ -1,5 +1,41 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &4712858335365262965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631493784561665382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9092296a65fc8439d9d18eaca96ed7c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  match: 2
+  toSpawn: []
+  minSpawnRadius: 0
+  maxSpawnRadius: 0
+  spawnCount: 0
+  explosionLevel: 2.5
+  explosionEffectPrefab: {fileID: 1924699497313199142, guid: cbc3420811944429d86c83114d2fc710,
+    type: 3}
+  soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
+    type: 3}
+  explodeSFX: {fileID: 8300000, guid: 05893c22c62b147a8bdf769d3a608b36, type: 3}
+  antigravity: 0
+--- !u!114 &4712858335365262966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1631493784561665382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7a39ea72ca2a4896961e268b44b4fbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4712858334960718930
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,41 +241,7 @@ MonoBehaviour:
   explosionEffectPrefab: {fileID: 0}
   soundPrefab: {fileID: 0}
   explodeSFX: {fileID: 0}
---- !u!114 &4712858335365262966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631493784561665382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7a39ea72ca2a4896961e268b44b4fbc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &4712858335365262965
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631493784561665382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9092296a65fc8439d9d18eaca96ed7c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  match: 2
-  toSpawn: []
-  minSpawnRadius: 0
-  maxSpawnRadius: 0
-  spawnCount: 0
-  explosionLevel: 2.5
-  explosionEffectPrefab: {fileID: 1924699497313199142, guid: cbc3420811944429d86c83114d2fc710,
-    type: 3}
-  soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
-    type: 3}
-  explodeSFX: {fileID: 8300000, guid: e7deddf42273c49d89ad6e55c8b33015, type: 3}
+  antigravity: 0
 --- !u!1001 &4712858334723753996
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -105,11 +105,17 @@ public class LevelSelectScript : MonoBehaviour
         GameObject snd = Instantiate<GameObject>(soundPrefab);
         snd.GetComponent<SFXScript>().sfx = clickSFX;
         
-        GameObject selection = Instantiate<GameObject>(levelSetups[levelIndex + offset]);
-        if (selection.GetComponent<LevelSetupScript>().loadSong != null){
-            FindObjectOfType<Jukebox>().PlaySong(selection.GetComponent<LevelSetupScript>().loadSong);
+        if (levelSetups[levelIndex + offset].GetComponent<LevelSetupScript>().startingCutscene == null){
+            GameObject selection = Instantiate<GameObject>(levelSetups[levelIndex + offset]);
+            if (selection.GetComponent<LevelSetupScript>().loadSong != null){
+                FindObjectOfType<Jukebox>().PlaySong(selection.GetComponent<LevelSetupScript>().loadSong);
+            }
+            SceneManager.LoadScene("SampleScene");
+        } else {
+            GameObject selection = Instantiate<GameObject>(levelSetups[levelIndex + offset].GetComponent<LevelSetupScript>().startingCutscene);
+            selection.GetComponent<CutsceneData>().setupPrefab = levelSetups[levelIndex + offset];
+            SceneManager.LoadScene("CutsceneScene");
         }
-        SceneManager.LoadScene("SampleScene");
     }
 
     public void IndexPlus(){
@@ -148,9 +154,13 @@ public class LevelSelectScript : MonoBehaviour
 
     public void ToggleOptionsMenu(){
         optionsMenu.SetActive(!optionsMenu.activeInHierarchy);
+        GameObject snd = Instantiate<GameObject>(soundPrefab);
+        snd.GetComponent<SFXScript>().sfx = clickSFX;
     }
 
     public void TogglePlaytestMode(){        
         FindObjectOfType<DataTracker>().ToggleTestMode();
+        GameObject snd = Instantiate<GameObject>(soundPrefab);
+        snd.GetComponent<SFXScript>().sfx = clickSFX;
     }
 }

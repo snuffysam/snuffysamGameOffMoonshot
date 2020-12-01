@@ -58,6 +58,9 @@ MonoBehaviour:
     to be spewing moon dust in all directions. I must destroy these moons quickly
     before my mission becomes impossible, colon zero.
   loadSong: {fileID: 8300000, guid: 4ec591f28433f4aff856648f0a59572f, type: 3}
-  quitSong: {fileID: 8300000, guid: 421e35068ebdf414e98631aae69e0653, type: 3}
   isBossBattle: 1
   index: 4
+  startingCutscene: {fileID: 1536273660631978503, guid: 0523ae31c9d3a4c618cc3270ab21c7ee,
+    type: 3}
+  endingCutscene: {fileID: 8058490067976653231, guid: 9697bae57effe46a3993e83f32efd9ae,
+    type: 3}

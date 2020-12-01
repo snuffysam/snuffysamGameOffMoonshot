@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5073519356852486925
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4704630291307971375}
+  - component: {fileID: 3326477481854997069}
+  m_Layer: 0
+  m_Name: AchillesStartCutscene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4704630291307971375
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5073519356852486925}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3326477481854997069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5073519356852486925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 316fdec6cab1c4e5fb58caa836eed017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoTime: 0
+  art:
+  - {fileID: 21300000, guid: 73d24b27ff37943839346dc2393fef27, type: 3}
+  - {fileID: 21300000, guid: 73d24b27ff37943839346dc2393fef27, type: 3}
+  - {fileID: 21300000, guid: 73d24b27ff37943839346dc2393fef27, type: 3}
+  - {fileID: 21300000, guid: 73d24b27ff37943839346dc2393fef27, type: 3}
+  - {fileID: 21300000, guid: 73d24b27ff37943839346dc2393fef27, type: 3}
+  - {fileID: 21300000, guid: 73d24b27ff37943839346dc2393fef27, type: 3}
+  - {fileID: 21300000, guid: 73d24b27ff37943839346dc2393fef27, type: 3}
+  - {fileID: 21300000, guid: 73d24b27ff37943839346dc2393fef27, type: 3}
+  - {fileID: 21300000, guid: 73d24b27ff37943839346dc2393fef27, type: 3}
+  - {fileID: 21300000, guid: 73d24b27ff37943839346dc2393fef27, type: 3}
+  text:
+  - Violent storms wailed past a massive treehouse complex. Floodwaters surged, but
+    failed to overtake the building. A trio of winged humanoids exited their domicile,
+    and peered down at the raging seas.
+  - '"FML! These tides are RIDONKULOUS!"'
+  - '"TBH, buying all those extra moons for Angelworld was, like, totally a mistake!
+    But how are we supposed to get rid of them?!?!"'
+  - With a slam, a robot landed next to the winged creatures. He stood up and flexed
+    for the trio.
+  - '"Have no fear!" blurted ACHILLES-4. "The Lunar Demolition Force is here for
+    all your moon destruction needs!"'
+  - '"O. M. G!!!!!" said one of the angels. "You''re that super totally hot robot
+    from the commercial!"'
+  - '"Hey, Mr. Android! Command! When you''re done blowing up our moons, like, take
+    a picture with us!"'
+  - '"HA HA HA! Nice try, angels!" bellowed the android. "But I was given free will
+    years ago! Your commands won''t work on me!"'
+  - ACHILLES-4 leapt into the air, back towards his orbiting rocket.
+  - '"Now, I must be off! There''s work to be done! Take care, kind angels! Don''t
+    let the door hit you where the Lunar Demolition Force split you!"'
+  textEmphasized: 00000000000000000000
+  music:
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  musicLoop: 01010101010101010101
+  setupPrefab: {fileID: 0}

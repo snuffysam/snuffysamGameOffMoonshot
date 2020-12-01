@@ -11,6 +11,9 @@ public class MCJackScript : MonoBehaviour
     private float startTimer;
     public float explosionLevel = 0.75f;
     public GameObject explosionEffectPrefab;
+    public GameObject soundPrefab;
+    public AudioClip shootSound;
+    public AudioClip catchSound;
     private PlanetScript planet;
     private Vector2 direction;
     private Vector3 portalOffset;
@@ -67,6 +70,9 @@ public class MCJackScript : MonoBehaviour
                 portalLeft.GetComponent<Rigidbody2D>().velocity = new Vector3(transform.up.x, transform.up.y) * -throwSpeed;
                 state = 1;
                 stateTimer = 0f;
+
+                GameObject snd = Instantiate<GameObject>(soundPrefab);
+                snd.GetComponent<SFXScript>().sfx = shootSound;
             }
         } else {
             GetComponent<Rigidbody2D>().velocity = direction*2f;
@@ -82,6 +88,9 @@ public class MCJackScript : MonoBehaviour
                 portalLeft.transform.localPosition = portalOffset;
                 state = 0;
                 stateTimer = 0f;
+
+                GameObject snd = Instantiate<GameObject>(soundPrefab);
+                snd.GetComponent<SFXScript>().sfx = catchSound;
             }
         }
     }

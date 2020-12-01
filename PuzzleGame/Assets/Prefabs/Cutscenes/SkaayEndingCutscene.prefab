@@ -1,0 +1,129 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4555062756165501369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4040894188968853915}
+  - component: {fileID: 6301681763749204217}
+  m_Layer: 0
+  m_Name: SkaayEndingCutscene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4040894188968853915
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4555062756165501369}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6301681763749204217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4555062756165501369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 316fdec6cab1c4e5fb58caa836eed017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoTime: 0
+  art:
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  - {fileID: 21300000, guid: c0bee7f8336bb407787d7cee7ce60036, type: 3}
+  - {fileID: 21300000, guid: c0bee7f8336bb407787d7cee7ce60036, type: 3}
+  - {fileID: 21300000, guid: 5e814248c054d44c7ac251cafc463a3f, type: 3}
+  - {fileID: 21300000, guid: 5e814248c054d44c7ac251cafc463a3f, type: 3}
+  - {fileID: 21300000, guid: 5e814248c054d44c7ac251cafc463a3f, type: 3}
+  - {fileID: 21300000, guid: 5e814248c054d44c7ac251cafc463a3f, type: 3}
+  - {fileID: 21300000, guid: 5e814248c054d44c7ac251cafc463a3f, type: 3}
+  - {fileID: 21300000, guid: 5e814248c054d44c7ac251cafc463a3f, type: 3}
+  - {fileID: 21300000, guid: 5e814248c054d44c7ac251cafc463a3f, type: 3}
+  - {fileID: 21300000, guid: 5e814248c054d44c7ac251cafc463a3f, type: 3}
+  - {fileID: 21300000, guid: 5e814248c054d44c7ac251cafc463a3f, type: 3}
+  - {fileID: 21300000, guid: 5e814248c054d44c7ac251cafc463a3f, type: 3}
+  - {fileID: 21300000, guid: 5e814248c054d44c7ac251cafc463a3f, type: 3}
+  - {fileID: 21300000, guid: 5e814248c054d44c7ac251cafc463a3f, type: 3}
+  - {fileID: 21300000, guid: 5e814248c054d44c7ac251cafc463a3f, type: 3}
+  - {fileID: 21300000, guid: 5e814248c054d44c7ac251cafc463a3f, type: 3}
+  text:
+  - The docking bay of Jupiter's Olympus space station opened with a hiss.
+  - Ska'ay's ship scraped to a stop in the garage, dragging the remains of the rabbit
+    creature along with it.
+  - Ska'ay disembarked from her rocket as the station's blast door closed. She nervously
+    picked up the rabbit-like face plate.
+  - '"Hmm... so this was a robot..." said Ska''ay. "But then, who made it? And what''s
+    with that strange symbol carved into it?"'
+  - '"Is something the matter?" cooed a female voice from off-screen. "Do you need
+    something cleaned?"'
+  - Ska'ay turned and saw a female pelozite. The pelozite had rabbit-like ears, and
+    a round, fluffy tail. She was wearing purple jeans, and had a sigil attached
+    to her collarbone.
+  - '"You... wh-who are you?!" said Ska''ay. "Why do you have the same symbol as
+    this rabbit?!"'
+  - The pelozite looked indignant. "Me? I don't know anything about that rabbit.
+    I'm just part of the janitorial staff on this fine station, greater than colon
+    three."
+  - Ska'ay drew her sickle and aimed it at the tall being's throat.
+  - '"H-hey!" shouted Ska''ay. "Nice try, but I''m married to a pelozite! I know
+    how your language works! Now, tell me! Wh-who are you?! What are you doing here?!"'
+  - '"Oh, you''re partnered with a pelozite? That''s cute," said the bunny-like being.
+    "You know, I''ve partnered with a few voinans in my day, so I know my way around
+    your kind."'
+  - The pelozite drew a wand from her jeans. She leaned down to Ska'ay's height.
+    Ska'ay was stunned. The wand scraped up against the spikes on the voinan's collarbone,
+    and slipped into the soft gel that made up her neck.
+  - '"I know you voinans play tough with those invincible shells of yours," said
+    the witch. "But go past the armor, and what you''re left with..."'
+  - The witch wiggled around her wand and slowly pulled it out of Ska'ay's exoskeleton.
+    A glob of green gel was stuck to the end of the wand.
+  - '"Is so very, very, vulnerable."'
+  - The pelozite stuck the end of her wand in her mouth. "Mmm... berry, greater than
+    colon right curly brace. Voinan, watch out for yourself, ok? Make sure your pelozite
+    partner has someone to come home to."
+  - Ska'ay stood paralyzed as the witch walked past her. The pelozite picked up the
+    remains of the rabbit robot, and dusted off the pieces.
+  - '"Aww, what happened to you, Lucky, colon left parenthesis?! Oh, well. Maybe
+    next time, I''ll release my robot around Venus or Mercury to improve my odds..."'
+  - In a flash of purple, the witch was gone, leaving Ska'ay panting frantically.
+  textEmphasized: 00000000000000000000000000000000000000
+  music:
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  - {fileID: 8300000, guid: 3495b375fd11b4d4d80310f8ee813e50, type: 3}
+  musicLoop: 01010101010101010101010101010101010101
+  setupPrefab: {fileID: 0}

@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6985188475894106476
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7481228038129355086}
+  - component: {fileID: 626731199768647724}
+  m_Layer: 0
+  m_Name: CreditsBCutscene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7481228038129355086
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6985188475894106476}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &626731199768647724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6985188475894106476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 316fdec6cab1c4e5fb58caa836eed017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoTime: 14.1
+  art:
+  - {fileID: 21300000, guid: d02714b85ee60426a8aa43b5e7db17d7, type: 3}
+  - {fileID: 21300000, guid: 141324cbdf5094265b35d22f0bd71b61, type: 3}
+  - {fileID: 21300000, guid: 16e70e716669e4fa381dc25a1097f6ca, type: 3}
+  - {fileID: 21300000, guid: 73c9af48910d2479184ebc1b799a01f4, type: 3}
+  - {fileID: 21300000, guid: 158345c14d0254effb30299208bbe91e, type: 3}
+  - {fileID: 21300000, guid: 8e9ce7d06c72445e0bf05132242effab, type: 3}
+  - {fileID: 21300000, guid: 2e3d5294f04c64694870825eec1069e5, type: 3}
+  - {fileID: 21300000, guid: 0c0567b4cd8894592ae645fcd22927c5, type: 3}
+  - {fileID: 21300000, guid: 0c0567b4cd8894592ae645fcd22927c5, type: 3}
+  - {fileID: 21300000, guid: 9a6f0189eafab4eaf9c43ea07de43db0, type: 3}
+  text:
+  - 
+  - Made for Github Game-Off 2020
+  - 'Direction: snuffysam'
+  - 'Writing: snuffysam'
+  - 'Art: snuffysam'
+  - 'Programming: snuffysam'
+  - 'Music: snuffysam'
+  - 'Sound Design: Cade Conkle'
+  - Fonts from Google Fonts
+  - The End!
+  textEmphasized: 00000000000000000001
+  music:
+  - {fileID: 8300000, guid: 4adf33106f2bd413389b2cd32c4c1f2b, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  musicLoop: 00000000000000000000
+  setupPrefab: {fileID: 0}

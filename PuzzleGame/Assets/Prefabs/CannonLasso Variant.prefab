@@ -22,7 +22,7 @@ MonoBehaviour:
   soundPrefab: {fileID: 490895057008880556, guid: dc94f11bef70e46208cdded9837b4857,
     type: 3}
   twirlSFX: {fileID: 8300000, guid: 0856a4d06b0584ef7acb0913c81b2bc6, type: 3}
-  hitSFX: {fileID: 8300000, guid: 1831e7fe5a38e4e49b5046099fda1989, type: 3}
+  hitSFX: {fileID: 8300000, guid: 6b27e110fc3284b4f850aee06ceaf1d3, type: 3}
 --- !u!1001 &3940411386096817833
 PrefabInstance:
   m_ObjectHideFlags: 0

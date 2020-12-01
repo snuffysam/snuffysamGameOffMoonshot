@@ -51,12 +51,16 @@ MonoBehaviour:
   startTime: 360
   nextLevel: MenuScene
   quitLevel: MenuScene
-  nextLevelPrefab: {fileID: 0}
+  nextLevelPrefab: {fileID: 3614168334239772540, guid: 9ea94923422e74d6887bff2d5d41fceb,
+    type: 3}
   RNG_order: 0
   missionName: That's Bull!
   missionTip: What in tarnation-! What's this Bull-Hare doin' here? I can't blow
     up the moon with this varmint running around!
   loadSong: {fileID: 8300000, guid: e57b6677ebd8d4dd38eb42385aaa130e, type: 3}
-  quitSong: {fileID: 8300000, guid: 421e35068ebdf414e98631aae69e0653, type: 3}
   isBossBattle: 1
   index: 4
+  startingCutscene: {fileID: 7589009040326107864, guid: 4a98ec829d8a445af9673f5dcd5e3c6e,
+    type: 3}
+  endingCutscene: {fileID: 7217589263407481690, guid: c49e65e1c08a245a8a93e49883ab18cb,
+    type: 3}

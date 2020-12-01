@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2674958048579398321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2467315670351817363}
+  - component: {fileID: 5574782821033769969}
+  m_Layer: 0
+  m_Name: SkaayBossCutscene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2467315670351817363
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2674958048579398321}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5574782821033769969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2674958048579398321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 316fdec6cab1c4e5fb58caa836eed017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  autoTime: 0
+  art:
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  - {fileID: 21300000, guid: a8d1e82e7b3d440a59c8f39f19bfc8d0, type: 3}
+  text:
+  - A hexagonal block was ejected from Ska'ay's rocket, and soared down to the surface
+    of Io below.
+  - '"Oh man... I hope there aren''t many moons left after this one!" said Ska''ay.
+    "I''m really running out of time..."'
+  - Ska'ay jumped in surprise at the sound of skittering on the side of her ship.
+    Ska'ay looked out of her window, and saw a creature with spider legs and a rabbit's
+    head.
+  - '"Wh-what the heck is that thing?! Some sort of rabbit... bug???"'
+  - The rabbit-like creature looked down at Jupiter's remaining moon. The creature's
+    eyes flashed with a hexagonal symbol. A hole opened in the creature's midsection,
+    and a copy of Ska'ay's wooden block popped out.
+  - '"What the- it copied my block! Hey, rabbit thing! That''s a p-propriety type
+    of wood! Get back here with that!"'
+  textEmphasized: 000000000000
+  music:
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 74c1b2ae8497a4c27ac8f1636f721b20, type: 3}
+  - {fileID: 8300000, guid: 1094e225a9cbd49bf8916e6dff6a2c74, type: 3}
+  - {fileID: 8300000, guid: 1094e225a9cbd49bf8916e6dff6a2c74, type: 3}
+  - {fileID: 8300000, guid: 1094e225a9cbd49bf8916e6dff6a2c74, type: 3}
+  - {fileID: 8300000, guid: 1094e225a9cbd49bf8916e6dff6a2c74, type: 3}
+  musicLoop: 010101010101
+  setupPrefab: {fileID: 0}

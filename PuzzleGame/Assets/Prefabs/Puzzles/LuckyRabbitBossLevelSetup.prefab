@@ -57,6 +57,9 @@ MonoBehaviour:
   missionTip: AIEEEEE! A- a- what even IS that thing?! Well, there's no time to worry
     about that! I-I-I-I've only got a few seconds left to destroy this moon!
   loadSong: {fileID: 8300000, guid: 1094e225a9cbd49bf8916e6dff6a2c74, type: 3}
-  quitSong: {fileID: 8300000, guid: 421e35068ebdf414e98631aae69e0653, type: 3}
   isBossBattle: 1
   index: 4
+  startingCutscene: {fileID: 2674958048579398321, guid: de7ad1cd755f44f27925e29af34a8ceb,
+    type: 3}
+  endingCutscene: {fileID: 4555062756165501369, guid: 6f17274e8e03a4c40ab073c413e1cc1c,
+    type: 3}
